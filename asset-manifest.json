@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ba1538b.css",
+    "main.js": "/static/js/main.803ad421.js",
+    "static/js/787.11402148.chunk.js": "/static/js/787.11402148.chunk.js",
+    "static/media/about-us1.jpg": "/static/media/about-us1.9c2f8e3c145dce8fe5bc.jpg",
+    "static/media/gallery4.jpg": "/static/media/gallery4.8036bce372b082f7dc09.jpg",
+    "static/media/about-us2.jpg": "/static/media/about-us2.7d6f1f7d0404d9121f27.jpg",
+    "static/media/gallery1.jpg": "/static/media/gallery1.50081b1cac2e14662bf1.jpg",
+    "static/media/gallery5.jpg": "/static/media/gallery5.23c664ec089d2566e562.jpg",
+    "static/media/gallery3.jpg": "/static/media/gallery3.6a3ddeca4bf50881f4c2.jpg",
+    "static/media/about-us3.jpg": "/static/media/about-us3.df081af8485faf154455.jpg",
+    "static/media/gallery2.jpg": "/static/media/gallery2.bbc75be62787c7a6ac53.jpg",
+    "static/media/gallery6.jpg": "/static/media/gallery6.1fecb424ebcff7c5ad4c.jpg",
+    "static/media/Lasantelogo.webp": "/static/media/Lasantelogo.71c4acdc0fb808e09e7d.webp",
+    "static/media/laptop2.png": "/static/media/laptop2.54bc2e9e4eac6d1deaa2.png",
+    "index.html": "/index.html",
+    "main.4ba1538b.css.map": "/static/css/main.4ba1538b.css.map",
+    "main.803ad421.js.map": "/static/js/main.803ad421.js.map",
+    "787.11402148.chunk.js.map": "/static/js/787.11402148.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ba1538b.css",
+    "static/js/main.803ad421.js"
+  ]
+}
