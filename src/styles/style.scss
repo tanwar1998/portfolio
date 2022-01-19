@@ -13,36 +13,22 @@ a{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    text-align: center;
-}
-.app-content-main{
-    width: 100%;
-    display: inline-block;
-    width: 80%;
-    position: relative;
-    float: none;
-    // margin: 0 10%; 
-    max-width: 1200px;
+    text-align: left;
 }
 h2{
     text-align: left;
     font-size: 35px;
 }
 
-.under-line{
-    width: 200px;
-    float: left;
+
+
+.app-content-container{
+    width: 100%;
+    max-width: 1200px;
     display: inline-block;
-    margin: -10px 0 0;
-    height: 5px;
-    background-image: linear-gradient(90deg, #17919f, #a8bd1e);
+    box-sizing: border-box;
+    float: none;
 }
 
-
-@media only screen and (max-width: 1200px){
-    .app-content-main{
-        width: 100%;
-        margin: 0;
-        padding: 0 20px;
-    }
-}
+// @media only screen and (max-width: 1200px){
+// }

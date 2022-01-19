@@ -1,7 +1,9 @@
 import React, { Component, Suspense } from "react";
 import LandingComponent from './components/landing';
-import LasanteNumbersComponent from './components/lasanteNumber';
-import PromotersComponent from './components/promoters';
+import Section from './components/scroll';
+import NavbarComponent from './components/navbar';
+import WorkComponent from './components/work';
+import ServiceComponent from './components/service';
 
 import './style.scss';
 
@@ -16,9 +18,11 @@ class HomeContainer extends Component {
     render() {
         return (
             <div className="hor-row home-component-main">
+                {/* <Section/> */}
                 <LandingComponent/>
-                <LasanteNumbersComponent/>
-                <PromotersComponent/>
+                <NavbarComponent/>
+                <WorkComponent/>
+                <ServiceComponent/>
             </div>
         )
     }

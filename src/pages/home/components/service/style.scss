@@ -1,0 +1,89 @@
+
+.service-container-main{
+    min-height: 100vh;
+    box-sizing: border-box;
+
+
+
+    .services-item-container{
+        margin: 20px 0;
+
+
+        .service-item{
+            width: calc(33.333% - 20px);
+            float: left;
+            box-sizing: border-box;
+            display: inline-block;
+            background: #000;
+            border-radius: 5px;
+            margin: 15px 10px;
+            position: relative;
+            z-index: 2;
+
+            .icon-container{
+                display: inline-block;
+                float: left;
+                background: blue;
+                color: #fff;
+                font-size: 20px;
+                padding: 5px 10px;
+                border-radius: 5px;
+
+            }
+            .service-heading{
+                margin: 20px 0 10px;
+                font-size: 20px;
+                color: blue;
+                font-weight: bold;
+                text-align: left;
+            }
+            .service-info{
+                font-size: 14px;
+                color: #cfcfcf;
+                line-height: 22px;
+                min-height: 100px;
+            }
+
+            .service-item-inner-container{
+                padding: 40px 15px 20px;
+                box-sizing: border-box;
+                
+                &:after, &:before{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 50%;
+                    z-index: -1;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #3276fb;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                    border-radius: 0 0 5px 5px ;
+                }
+                &:before {
+                    border-radius: 5px 5px 0 0;
+                    top: 0;
+                    transform-origin: bottom left;
+                }
+                &:hover{
+                    .service-heading{
+                        color: #111;
+                    }
+                    &:after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                      }
+                    &:before {
+                        transform: scaleX(1);
+                        transform-origin: bottom right;
+                      }
+    
+                }
+            }
+
+            
+        }
+    }
+}
