@@ -1,0 +1,281 @@
+
+.home-component-main{
+    position: relative; 
+    min-height: 500vh;
+
+    .sticky-component{
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .component-back{
+        background: linear-gradient( 180deg , #111, #222222, #111);
+        color: #fff;
+        text-align: center;
+        padding: 80px 0 20px;
+    }
+
+    h5{
+        color: #999999;
+        font-size: 15px;
+        text-align: left;
+        margin: 10px 0;
+        font-weight: 440;
+        margin: 10px 0 20px;
+        float: left;
+        line-height: 20px;
+    }
+    .main-heading-container{
+        .text{
+            position: relative;
+            color: #3276fb;
+            text-align: left;
+            font-size: 35px;
+            transition: all ease-in-out 0.3s;
+            z-index: 2;
+            display: inline-block;
+            padding: 4px 0;
+            font-weight: 555;
+
+
+            &:after{
+                // &:after, &:before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                z-index: -1;
+                bottom: 0;
+                left: 0;
+                background-color: #3276fb;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            &:hover{
+                &:after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+        
+    }
+    .landing-component-main{
+        background: linear-gradient( 180deg , #111, #222222, #111);
+        color: #fff;
+        min-height: 100vh;
+        padding: 0 0 20px;
+        text-align: center;
+
+        .left-side-container{
+            width: calc(50%);
+            margin-top: 20vh;
+            box-sizing: border-box;
+            padding: 0 20px;
+            float: right;
+            text-align: center;
+
+
+            .intro-label-container{
+                font-size: 18px;
+                color: #c7c7c7;
+
+            }
+            h1{
+                color: blue;
+                margin: 25px 0;
+                font-size: 5em;
+
+                span{
+                    display: inline-block;
+                    transition: all ease-in 0.3s;
+                    &:hover{
+                        color: #92b1ed;
+                    }
+                    &:active{
+                        animation: shrinkjump 1s ease-in-out;
+                        transform-origin: bottom center;
+                    }
+                }
+            }
+            h3{    
+                font-size: 40px;
+                margin: 10px 0;
+            }
+        }
+
+        .right-side-container{
+            text-align: center;
+
+            .developer-image-container{
+                background-image: url('../../assets/images/vineet5.png');
+                background-size: cover;
+                background-position: center;
+                width: 290px;
+                height: 420px;
+                float: none;
+                display: inline-block;
+                border-left: 1px solid blue;
+                border-right: 5px solid #5e7db9;
+                border-bottom: 5px solid #5e7db9;
+                border-radius: 15px;
+                transition: all ease-in 0.3s;
+                position: relative;
+
+                .button-container-main{
+                    width: 60px;
+                    border: 6px solid #3276fb;
+                    display: inline-block;
+                    height: 60px;
+                    text-align: center;
+                    border-radius: 50%;
+                    transition: all ease-in 0.3s;
+                    position: absolute;
+                    bottom: 12px;
+                    left: calc(50% - 27px);
+
+                    .inner-button{
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 9px;
+                        margin-left: 9px;
+                        border-radius: 50%;
+                        background: #3276fb;
+                        
+                    }
+                }
+
+                &:hover{
+                    background-image: url('../../assets/images/vineet-back.jpg');
+                    border-left: 1px solid rgba(0,0,0,0);
+                    border-right: 5px solid rgba(0,0,0,0);
+                    border-bottom: 5px solid rgba(0,0,0,0);
+
+                    .button-container-main{
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-container-main{
+        background: #000;
+        text-align: center;
+        padding: 15px;
+        color: #3276fb;
+        font-size: 14px;
+        width: 100%;
+        float: left;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+    }
+
+    @media only screen and (max-width: 1200px){
+        .sticky-component{
+            position: relative;
+        }
+        .landing-component-main{
+
+            .left-side-container{
+                width: 100%;
+
+                h1{
+                    font-size: 3.1em;
+                }
+            }
+            .right-side-container{
+                margin-top: 100px;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .sticky-component{
+            position: relative;
+        }
+        .landing-component-main{
+            .left-side-container{
+                h3{
+                    min-height: 88px;
+                }
+            }
+        }
+        .main-heading-container .text{
+            font-size: 29px;
+        }
+        .component-back {
+            padding: 30px 0 20px;
+        }
+    }
+}
+
+@keyframes shrinkjump {
+	10%{
+		transform: scale(2, .2) translate(0, 0);
+	}
+    35% {
+		transform: scale(2, .2) translate(0, 0);
+	}
+	
+	45% {
+		transform: scale(1) translate(0, -150px);
+	}
+    50% {
+		transform: scale(1) translate(0, -150px);
+	}
+	
+	80% {
+		transform: scale(1) translate(0, 0);
+	}
+}
+
+
+.light-mode-container{
+
+    // .home-component-main{
+        .component-back{
+            background: linear-gradient( 180deg , #eee, #ddd, #eee);
+            color: #000;
+        }
+    
+        h5{
+            color: #323232;
+        }
+        .landing-component-main{
+            background: linear-gradient( 180deg , #eee, #ddd, #eee);
+            color: #000;
+
+            .left-side-container{   
+    
+                .intro-label-container{
+                    color: #343434;
+                }
+                h1{
+                    span{
+                        &:hover{
+                            color: #8ba9e3;
+                        }
+                    }
+                }
+            }
+    
+            .right-side-container{
+                .developer-image-container{    
+                    &:hover{
+                        border-left: 1px solid rgba(254,254,254,0);
+                        border-right: 5px solid rgba(254,254,254,0);
+                        border-bottom: 5px solid rgba(254,254,254,0);
+                    }
+                }
+            }
+        }
+        .footer-container-main{
+            background: #fff;
+            color: #3276fb;    
+        }
+    // }
+
+}

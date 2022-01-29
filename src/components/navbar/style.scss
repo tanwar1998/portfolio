@@ -1,0 +1,183 @@
+
+.nav-bar-component-main{
+    background: #ebecf1;
+    padding-top: 10px;
+
+
+    .logo-container-main{
+        width: 200px;
+        float:left;
+        display: inline-block;
+        box-sizing: border-box;
+
+        .logo-item{
+            background-image: url('../../assets/images/Lasantelogo.webp');
+            width: 200px;
+            background-size: cover;
+            background-position: center;
+            height: 55px;
+        
+        }
+    }
+    .more-icon{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 18px;
+        color: #898989;
+        display: none;
+
+    }
+    .nav-item-container{
+        float: left;
+        margin-left: 20px;
+        display: inline-block;
+        width: calc(100% - 220px);
+        padding-top: 7px;
+        position: relative;
+
+        .nav-item{
+            display: inline-block;
+            float: left;
+            margin: 0 2%;
+            font-size: 16px;
+            line-height: 25px;
+            color: #565656;
+            position: relative;
+            cursor: pointer;
+            transition: all ease-in 0.3s;
+
+            .nav-sub-item-container{
+                position: absolute;
+                top: 25px;
+                left: 0;
+                background: #a9bd1f;
+                min-width: 100px;
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+                text-align: left;
+                border-radius: 5px;
+                padding: 5px 14px;
+                line-height: 20px;
+                transition: all ease-in 0.3s;
+                display: none;
+
+                &:hover{
+                    display: inline-block;
+                }
+
+                .nav-sub-item-label{
+                    transition: all ease-in 0.3s;
+                    text-align: left;
+
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &:hover{
+                color: #0c0c0c;
+
+                .nav-sub-item-container{
+                    display: inline-block;
+                }
+            }
+            &:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: #444444;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+              }
+              &:hover:after { 
+                width: 100%; 
+                left: 0; 
+              }
+            .talk-to-us{
+                padding: 0 10px;
+                background: #17919f;
+                line-height: 29px;
+                float: left;
+                text-align: center;
+                color: #fff;
+                border-radius: 5px;
+                transition: all ease-in 0.3s;
+
+                &:hover{
+                    background: #0f717c;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 980px){
+        .nav-item-container{
+            display: none;
+        }
+        .more-icon{
+            display: inline-block;
+        }
+    }
+}
+.menu-modal-class{
+    .nav-item-container{
+        margin-top: 40px;
+
+        .nav-item{
+            color: #484747;
+            font-size: 14px;
+            width: 100%;
+            float: left;
+            line-height: 25px;
+            transition: all ease-in 0.3s;
+
+            .nav-sub-item-container{
+                padding: 0 0px 5px 20px;
+                width: 100%;
+                box-sizing: border-box;
+                float: left;
+                .nav-sub-item-label{
+                    font-size: 13px;
+                    line-height: 15px;
+                    text-align: left;
+                    color: #606060;
+                }
+            }
+            &:hover{
+                color: #262626;
+            }
+            .talk-to-us{
+                padding: 0 10px;
+                background: #17919f;
+                line-height: 29px;    
+                margin: 10px 0;
+                float: left;
+                text-align: center;
+                color: #fff;
+                border-radius: 5px;
+                transition: all ease-in 0.3s;
+
+                &:hover{
+                    background: #0f717c;
+                }
+            }
+        }
+        
+    }
+}
+
+.close-menu-modal-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #555555;
+    font-size: 18px;
+}

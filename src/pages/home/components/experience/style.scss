@@ -1,0 +1,121 @@
+
+.experience-container-main{
+
+    .experience-content-main{
+        margin: 30px 0 20px;
+        display: grid;
+        grid-template-columns: 142px auto;
+        position: relative;
+        grid-gap: 30px;
+    
+
+        .left-side-container{
+            position: relative;
+            .company-name{
+                font-size: 14px;
+                color: #707070;
+                padding: 7px 10px;
+                cursor: pointer;
+                transition: all ease-in-out 0.3s;
+                border-radius: 0 3px 3px 0;
+                border-left: 1px solid #3276fb;
+
+                &:hover{
+                    background: #10254e;
+                    color: #ffff;
+                }
+            }
+            .selected-company-name{
+                background: #3276fb;
+                color: #ffff;
+
+                &:hover{    
+                    background: #2d5db9;
+                }
+            }
+        }
+
+        .right-side-container{
+            
+            .heading-main{
+                font-size: 20px;
+                font-weight: 555;
+            }
+            .duration-text, .job-type-text{
+                font-size: 15px;
+                color: #8d8888;
+                margin: 0px 0 0;
+            }
+            .job-type-text{
+                font-size: 12px;
+                margin: 0px 0 20px;
+            }
+            .experience-info-main{
+                font-size: 13px;
+                color: #c7c7c7;
+
+                .info-icon{
+                    font-weight: bold;
+                    color: #a0a0e9;
+                    margin-right: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        @media only screen and (max-width: 768px){
+            grid-gap: 20px;
+            grid-template-columns: 110px auto;
+        
+
+            .left-side-container{
+                .company-name{
+                    font-size: 11px;
+                    padding: 4px 0px 4px 10px;
+                }
+            }
+            .right-side-container .experience-info-main {
+                font-size: 11px;
+            }
+            .right-side-container .experience-info-main .info-icon {
+                margin-right: 5px;
+                font-size: 12px;
+            }
+        }
+
+    }
+}
+
+.light-mode-container{
+
+    .experience-content-main{
+        .left-side-container{
+            .company-name{
+                color: #302f2f;
+                &:hover{
+                    background: #6f94db;
+                }
+            }
+            .selected-company-name{
+                background: #3276fb;
+                color: #ffff;
+
+                &:hover{    
+                    background: #2d5db9;
+                }
+            }
+        }
+
+        .right-side-container{
+            .duration-text, .job-type-text{
+                color: #686868;
+            }
+            .experience-info-main{
+                color: #363636;
+
+                .info-icon{
+                    color: #4b4b6c;
+                }
+            }
+        }
+    }
+}
