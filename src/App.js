@@ -1,10 +1,10 @@
 import './App.css';
 import './styles/style.scss';
-import Router from '../src/navigation/router.js';
+import Home from "./pages/home";
 
 function App() {
   return (
-    <Router />
+    <Home />
   );
 }
 
