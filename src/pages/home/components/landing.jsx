@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ButtonComponent from '../../../components/button';
 import Typewriter from 'typewriter-effect';
 
@@ -19,18 +19,12 @@ const NameString = [
 ]
 
 const LandingComponent = (props) => {
-    const [backImageClass , setBackImageClass] = useState('initial-developer-image-container')
-
-    useEffect(()=>{
-        setBackImageClass('')
-
-    }, [])
-
+    
     return (
         <div className="hor-row sticky-component landing-component-main">
             <div className="hor-row app-content-container">
                 <div className="left-side-container right-side-container">
-                    <div className={ "developer-image-container " + backImageClass }>
+                    <div className={ "developer-image-container "}>
                         <div className="button-container-main">
                             <div className="inner-button"></div>
                         </div>

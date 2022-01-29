@@ -1,11 +1,7 @@
 
 import React from "react";
 import './style.scss';
-import { MonitorOutlined, DesktopOutlined, BuildOutlined, CodeOutlined, Html5Outlined } from '@ant-design/icons';
-import DesignServicesOutlinedIcon from '@mui/icons-material/DesignServicesOutlined';
-import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
-import LogoDevOutlinedIcon from '@mui/icons-material/LogoDevOutlined';
-
+import { DesktopOutlined, BuildOutlined, CodeOutlined } from '@ant-design/icons';
 const services = [
     {
         icon: <CodeOutlined/>,
@@ -25,17 +21,6 @@ const services = [
 ]
 
 const ServiceComponent = (props) => {
-
-
-// import { LaunchOutlined } from '@mui/icons-material';
-
-{/* <MonitorOutlined />
-<DesktopOutlined />
-<BuildOutlined />
-<CodeOutlined />
-<Html5Outlined /> */}
-
-
 
     return (
         <div className="hor-row sticky-component component-back service-container-main">

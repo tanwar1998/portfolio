@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from "react";
+import React, { Component } from "react";
 import LandingComponent from './components/landing';
 import NavbarComponent from './components/navbar';
 import WorkComponent from './components/work';
