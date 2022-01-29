@@ -4,7 +4,8 @@ import './style.scss'
 const ButtonComponent = (props) => {
     return (
         <div className="button-container-main"
-            style = { props.style } >
+            style = { props.style } 
+            onClick={props.onClick} >
             <div className="back-circle-container"/>
             <button className="custom-button-class">
                 Hire me

@@ -22,6 +22,14 @@ const LandingComponent = (props) => {
     return (
         <div className="hor-row sticky-component landing-component-main">
             <div className="hor-row app-content-container">
+                <div className="left-side-container right-side-container">
+                    <div className="developer-image-container">
+                        <div className="button-container-main">
+                            <div className="inner-button"></div>
+                        </div>
+                    </div>
+                    
+                </div>
                 <div className="left-side-container">
                     <div className="hor-row intro-label-container">
                         Hii, I am 
@@ -44,10 +52,8 @@ const LandingComponent = (props) => {
                     <h5>
                         I am a developer based in Lagos, Nigeria focused on creating interactive digital experiences on the web, working with brands and industry leaders such as DISNEY, PAYSTACK, PRINTIVO, and WILD amongst others to achieve this.
                     </h5>
-                    <ButtonComponent/>
-                </div>
-                <div className="left-side-container right-side-container">
-                    <div className="developer-image-container"></div>
+                    <ButtonComponent
+                        onClick = { props.scrollTo } />
                 </div>
             </div>
         </div>

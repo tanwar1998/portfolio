@@ -10,6 +10,7 @@
     color: inherit;
     font-weight: 555;
     font-size: 18px;
+    border-radius: 10px;
 
 
     .back-circle-container{
@@ -30,6 +31,7 @@
         background: inherit;
         position: relative;
         transition: all ease-in 0.3s;
+        border-radius: 10px;
     }
     &:hover{
         .back-circle-container{

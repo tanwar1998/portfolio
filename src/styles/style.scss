@@ -1,4 +1,7 @@
 
+body{
+    scroll-behavior: smooth;
+}
 .center{
     text-align: center;
 }
@@ -30,5 +33,8 @@ h2{
     float: none;
 }
 
-// @media only screen and (max-width: 1200px){
-// }
+@media only screen and (max-width: 1200px){
+    .app-content-container{
+        padding: 0 20px;
+    }
+}

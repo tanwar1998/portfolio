@@ -4,6 +4,7 @@
     text-align: center;
     padding: 10px 0px;
     z-index: 50;
+    position: absolute!important;
 
 
     .logo-container-main{
@@ -55,6 +56,31 @@
             .icon-container{
                 cursor: pointer;
                 font-size: 18px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1200px){
+        position: absolute!important;
+    }
+}
+
+.light-mode-container{
+    .navbar-container-main{
+        background: #fff;
+        .logo-container-main{
+            color: blue;
+            .special-character{
+                color: #000;
+            }
+        }
+        .nav-link-container{
+            color: #3939df;
+
+            .link-content{
+                &:hover{
+                    color: #898989;
+                }
             }
         }
     }

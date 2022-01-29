@@ -31,7 +31,9 @@ const WorkComponent = (props) => {
 
 
     return (
-        <div className="hor-row sticky-component component-back work-sample-container-main">
+        <div className="hor-row sticky-component component-back work-sample-container-main"
+            ref = { props.tmpRef } 
+        >
             <div className="app-content-container">
                 <div className="hor-row main-heading-container">
                     <div className="text">
@@ -54,18 +56,6 @@ const WorkComponent = (props) => {
                                             { stack }
                                         </span>
                                     )) }
-                                    {/* <span>
-                                        React js
-                                    </span>
-                                    <span>
-                                        Material UI
-                                    </span>
-                                    <span>
-                                        Redux
-                                    </span>
-                                    <span>
-                                        Axios
-                                    </span> */}
                                 </div>
                                 <a className="hor-row visit-link" href={ item.link }>
                                     <LaunchOutlined className='icon'/>
@@ -73,37 +63,11 @@ const WorkComponent = (props) => {
                             </div>
                             <div className="hor-row work-info">
                                 { item.text }
-                                {/* I worked as project architecture and team leader for the frontend developer; */}
                             </div>
                         </div>
 
 
                     )) }
-                    {/* <div className="work-block-main">
-                        <img src={GlobalGarner} alt='website'/>
-                        <div className="info-container">
-                            <div className="hor-row tech-stack">
-                                <span>
-                                    React js
-                                </span>
-                                <span>
-                                    Material UI
-                                </span>
-                                <span>
-                                    Redux
-                                </span>
-                                <span>
-                                    Axios
-                                </span>
-                            </div>
-                            <a className="hor-row visit-link" href="">
-                                <LaunchOutlined className='icon'/>
-                            </a>
-                        </div>
-                        <div className="hor-row work-info">
-                            I worked as project architecture and team leader for the frontend developer;
-                        </div>
-                    </div> */}
 
                 </div>
             </div>

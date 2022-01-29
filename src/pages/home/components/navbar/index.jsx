@@ -1,11 +1,8 @@
 
 import React from "react";
 import './style.scss';
-// import {FavoriteBorder} from '@material-ui/icons';
-// import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-// import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-// import LightModeIcon from '@mui/icons-material/LightMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 
 const NavbarComponent = (props) => {
@@ -20,26 +17,13 @@ const NavbarComponent = (props) => {
                     </span>
                 </div>
                 <div className="nav-link-container">
-                    <span className="link-content">
-                        Work
-                    </span>
-                    <span className="link-content">
-                        Services
-                    </span>
-                    <span className="link-content">
-                        Experience
-                    </span>
-                    <span className="link-content">
-                        Top Categories
-                    </span>
-                    <span className="link-content">
-                        Hire Me
-                    </span>
-
                     <div className="setting-container">
-                        <LightModeIcon className="icon-container"/>
+                        {props.currentMode === 'dark' ? <LightModeIcon className="icon-container"
+                            onClick = {() => props.setMode('light')} />
+                        : <DarkModeIcon className="icon-container"
+                            onClick = {() => props.setMode('dark')} />
+                        }
                     </div>
-
 
                 </div>
             </div>

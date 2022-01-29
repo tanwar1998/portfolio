@@ -3,8 +3,6 @@
     min-height: 100vh;
     box-sizing: border-box;
 
-
-
     .services-item-container{
         margin: 20px 0;
 
@@ -84,6 +82,46 @@
             }
 
             
+        }
+
+        @media only screen and (max-width: 768px){
+            text-align: center;
+
+            .service-item{
+                width: 300px;
+                margin: 0 0 35px;
+                float: none; 
+
+            }
+        }
+    }
+}
+
+.light-mode-container{
+    .services-item-container{
+
+        .service-item{
+            background: #fff;
+            .service-heading{
+                color: blue;
+            }
+            .service-info{
+                color: #5a5a5a;
+            }
+
+            .service-item-inner-container{
+                &:after, &:before{
+                    background-color: #3276fb;
+                }
+                &:hover{
+                    .service-heading{
+                        color: #eee;
+                    }   
+                    .service-info{
+                        color: #c7c7c7;
+                    }     
+                }
+            }
         }
     }
 }

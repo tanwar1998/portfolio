@@ -97,6 +97,16 @@
                 color: #ccccd1;
             }
         }
+
+        @media only screen and (max-width: 768px){
+            text-align: center;
+
+            .work-block-main{
+                width: 300px;
+                margin-bottom: 35px;
+                float: none;            
+            }
+        }
     }
 
     @keyframes showcase{
@@ -123,5 +133,16 @@
             left: 0;
             transform: translate(0, 0%);
         }
+    }
+}
+
+.light-mode-container{
+    .work-sample-content-main{
+        .work-block-main{
+            .work-info{
+                color: #545454;
+            }
+        }
+
     }
 }

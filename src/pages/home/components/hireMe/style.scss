@@ -1,0 +1,44 @@
+.hire-me-container-main{
+    .hire-me-content{
+        display: grid;
+        grid-template-columns: 400px auto;
+    }
+    .links-container-main{
+        padding-top: 55px;
+        text-align: center;
+
+        a{
+            font-size: 25px;
+            display: inline-block;
+            margin: 10px 15px;
+            color: #b9b9b9;
+            transition: all ease-in-out 0.2s;
+            cursor: pointer;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .hire-me-content{
+            display: block;
+        }
+        .links-container-main{
+            padding: 20px 0;
+        }
+    }
+}
+
+.light-mode-container{
+    .hire-me-container-main{
+        .links-container-main{
+            a{
+                color: #323232;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
