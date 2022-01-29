@@ -110,7 +110,7 @@ const ExperienceComponent = (props) => {
                     <div className="right-side-container">
                         <div className="hor-row heading-main">
                             {companies[openedIndex].post + ' @'}
-                            <span style = {{color: '#7070cf', marginLeft:'5px'}}>
+                            <span style = {{color: '#3276fb', marginLeft:'5px'}}>
                                 {companies[openedIndex].name}
                             </span>
                         </div>

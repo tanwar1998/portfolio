@@ -83,7 +83,7 @@
 
             }
             h1{
-                color: blue;
+                color: #3276fb;
                 margin: 25px 0;
                 font-size: 5em;
 
@@ -116,7 +116,7 @@
                 height: 420px;
                 float: none;
                 display: inline-block;
-                border-left: 1px solid blue;
+                border-left: 1px solid #3276fb;
                 border-right: 5px solid #5e7db9;
                 border-bottom: 5px solid #5e7db9;
                 border-radius: 15px;
@@ -189,6 +189,16 @@
             }
             .right-side-container{
                 margin-top: 100px;
+
+                .developer-image-container:hover{
+                    background-image: url('../../assets/images/vineet5.png');
+                    border-left: 1px solid #3276fb;
+                    border-right: 5px solid #5e7db9;
+                    border-bottom: 5px solid #5e7db9;
+                    .button-container-main{
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
@@ -276,6 +286,23 @@
             background: #fff;
             color: #3276fb;    
         }
+
+    @media only screen and (max-width: 1200px){
+        .sticky-component{
+            position: relative;
+        }
+        .landing-component-main{
+
+            .right-side-container{
+
+                .developer-image-container:hover{
+                    border-left: 1px solid #3276fb;
+                    border-right: 5px solid #5e7db9;
+                    border-bottom: 5px solid #5e7db9;
+                }
+            }
+        }
+    }
     // }
 
 }
