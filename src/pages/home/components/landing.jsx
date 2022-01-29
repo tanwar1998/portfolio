@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ButtonComponent from '../../../components/button';
 import Typewriter from 'typewriter-effect';
 
@@ -19,11 +19,18 @@ const NameString = [
 ]
 
 const LandingComponent = (props) => {
+    const [backImageClass , setBackImageClass] = useState('initial-developer-image-container')
+
+    useEffect(()=>{
+        setBackImageClass('')
+
+    }, [])
+
     return (
         <div className="hor-row sticky-component landing-component-main">
             <div className="hor-row app-content-container">
                 <div className="left-side-container right-side-container">
-                    <div className="developer-image-container">
+                    <div className={ "developer-image-container " + backImageClass }>
                         <div className="button-container-main">
                             <div className="inner-button"></div>
                         </div>
@@ -50,7 +57,7 @@ const LandingComponent = (props) => {
                         />
                     </h3>
                     <h5>
-                        I am a developer based in Lagos, Nigeria focused on creating interactive digital experiences on the web, working with brands and industry leaders such as DISNEY, PAYSTACK, PRINTIVO, and WILD amongst others to achieve this.
+                        I am a developer based in Delhi, India focused on creating interactive digital experiences on the web, working with brands and industry leaders. 
                     </h5>
                     <ButtonComponent
                         onClick = { props.scrollTo } />
