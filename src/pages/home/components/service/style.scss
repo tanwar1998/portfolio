@@ -95,6 +95,11 @@
             }
         }
     }
+    
+
+    @media only screen and (min-width: 1480px) and (min-height: 670px){
+        min-height: 670px;
+    }
 }
 
 .light-mode-container{
