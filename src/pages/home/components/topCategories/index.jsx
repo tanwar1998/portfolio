@@ -35,6 +35,9 @@ const techStack = [
         name: 'JSON'
     },
     {
+        name: 'PWA'
+    },
+    {
         name: 'Jquery'
     },
     {
