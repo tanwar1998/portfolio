@@ -26,6 +26,7 @@
                 font-size: 20px;
                 padding: 5px 10px;
                 border-radius: 5px;
+                transition:all ease-in 0.3s;
 
             }
             .service-heading{
@@ -67,7 +68,12 @@
                 }
                 &:hover{
                     .service-heading{
-                        color: #111;
+                        color: #fff;
+                    }
+
+                    .icon-container{
+                        background: #fff;
+                        color: #3276fb;
                     }
                     &:after {
                         transform: scaleX(1);
@@ -120,7 +126,7 @@
                 }
                 &:hover{
                     .service-heading{
-                        color: #eee;
+                        color: #fff;
                     }   
                     .service-info{
                         color: #c7c7c7;

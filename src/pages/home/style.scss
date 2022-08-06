@@ -84,7 +84,8 @@
             h1{
                 color: #3276fb;
                 margin: 25px 0;
-                font-size: 5em;
+                font-size: 5.5em;
+                font-family: 'Wallpoet', cursive;
 
                 span{
                     display: inline-block;
@@ -99,7 +100,8 @@
                 }
             }
             h3{    
-                font-size: 40px;
+                font-size: 55px;
+                font-family: 'Kaushan Script', cursive;
                 margin: 10px 0;
             }
         }
@@ -112,7 +114,7 @@
                 background-size: cover;
                 background-position: center;
                 width: 290px;
-                height: 420px;
+                height: 435px;
                 float: none;
                 display: inline-block;
                 border-left: 1px solid #3276fb;
@@ -145,16 +147,15 @@
                     }
                 }
 
-                // &:hover{
-                //     background-image: url('../../assets/images/vineet-back.jpg');
-                //     border-left: 1px solid rgba(0,0,0,0);
-                //     border-right: 5px solid rgba(0,0,0,0);
-                //     border-bottom: 5px solid rgba(0,0,0,0);
+                &:hover{
+                    border-left: 1px solid rgba(0,0,0,0);
+                    border-right: 5px solid rgba(0,0,0,0);
+                    border-bottom: 5px solid rgba(0,0,0,0);
 
-                //     .button-container-main{
-                //         opacity: 0;
-                //     }
-                // }
+                    .button-container-main{
+                        opacity: 0;
+                    }
+                }
             }
 
             // .initial-developer-image-container{
@@ -193,7 +194,7 @@
                 margin-top: 50px;
 
                 h1{
-                    font-size: 3.1em;
+                    font-size: 2.8em;
                 }
             }
             .right-side-container{
@@ -287,6 +288,11 @@
                         border-left: 1px solid rgba(254,254,254,0);
                         border-right: 5px solid rgba(254,254,254,0);
                         border-bottom: 5px solid rgba(254,254,254,0);
+
+
+                        .button-container-main{
+                            opacity: 0;
+                        }
                     }
                 }
             }
@@ -308,6 +314,9 @@
                     border-left: 1px solid #3276fb;
                     border-right: 5px solid #5e7db9;
                     border-bottom: 5px solid #5e7db9;
+                    .button-container-main{
+                        opacity: 1;
+                    }
                 }
             }
         }

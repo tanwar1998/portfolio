@@ -16,8 +16,8 @@ const ExperienceComponent = (props) => {
             post: 'Software Engineer',
             details:[
                 'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-                'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Threekit, React, Node js, Heroku server',
+                'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
             ]
         },
         {
@@ -27,9 +27,9 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Full Stack Developer',
             details:[
-                'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-                'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+                'Project architecture, team leader',
+                'Write modern, performant, maintainable code for internal projects',
+                'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
             ]
         },
         {
@@ -39,9 +39,9 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Product Developer',
             details:[
-                'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-                'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+                'Project architecture and developer',
+                'Write modern, performant, maintainable code for internal projects',
+                'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
             ]
         },
         {
@@ -52,7 +52,7 @@ const ExperienceComponent = (props) => {
             post: 'Software Intern',
             details:[
                 'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
+                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Vue js, React, Angular, Node js',
                 'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
             ]
         },
@@ -64,19 +64,19 @@ const ExperienceComponent = (props) => {
             post: 'Intern',
             details:[
                 'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-                'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, React, Angular, AWS Lambda, Node js',
+                'Communicate with multi-disciplinary teams of backend developer, and project manager on a daily basis'
             ]
         },
         {
             shortName: 'ReadyToGo',
             name: 'ReadyToGo',
-            duration: 'Jun 2019 to Jul 2019',
+            duration: 'Jun 2019',
             type: 'Internship',
             post: 'Summer Intern',
             details:[
                 'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
+                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, PHP',
                 'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
             ]
         }
@@ -91,8 +91,8 @@ const ExperienceComponent = (props) => {
                     </div>
                 </div>
                 <h5 className="info-text-container">
-                    I have worked in the software industry for the past 2 years. 
-                    <br/>Currently, I'm working as Frontend developer at Digitige Solutions.
+                    I have worked in the software industry for the past 2 and half years. 
+                    <br/>Currently, I'm working as Software Engineer at Digitige Solutions.
                 </h5>
 
                 <div className="hor-row experience-content-main">
@@ -125,7 +125,7 @@ const ExperienceComponent = (props) => {
                                 companies[openedIndex].details.map((detail)=>(
                                     <>
                                         <RightCircleOutlined className="info-icon" />
-                                        { detail }
+                                        { detail + '.' }
                                         <br/> <br/>
                                     </>
                                 ))

@@ -97,11 +97,17 @@ const techStack = [
         name: 'Axios'
     },
     {
+        name: 'Heroku'
+    },
+    {
         name: 'Tailwind'
     },
     {
         name: 'Angular js',
         isMain: true,
+    },
+    {
+        name: 'Penetration Testing'
     },
     {
         name: 'Express js'
