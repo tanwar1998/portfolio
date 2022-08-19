@@ -19,7 +19,7 @@ export const BasicInfo = [
     },
     {
         key: 'Address',
-        value: 'V.P.O. DhanaLadanpur, Bhiwani(127021), Bhiwani (Har.)'
+        value: 'V.P.O. DhanaLadanpur, Bhiwani(127021), Bhiwani HR.'
     },
 ]
 
@@ -39,7 +39,7 @@ export const BasicExp = [
         details: [
             {
                 h4: 'ESCI',
-                date: 'June 2018',
+                date: 'JUNE 2018',
                 info: '6 Week Web Development Using MEAN STACK'
             }
         ]
@@ -50,7 +50,7 @@ export const BasicExp = [
             {
                 h4: 'TRAINING & PLACEMENT CELL OF G.J.U.S.&T.',
                 date: '1 SEP, 2019 - 30 NOV, 2019',
-                info: 'COORDINATOR OF WEBSITE TEAM '
+                info: 'COORDINATOR OF WEBSITE TEAM'
             }
         ]
     },
@@ -64,11 +64,11 @@ export const BasicExp = [
             },
             {
                 h4: 'SUSURLA IMPEX PVT. LMT.',
-                date: 'Aug 2019 - Sep 2019',
+                date: 'AUG 2019 - SEP 2019',
                 info: 'FULL STACK DEVELOPER'
             },
             {
-                h4: '75WAY TECHNOLOGY ',
+                h4: '75WAY TECHNOLOGY',
                 date: '27 JAN, 2020 - 27 JULY 2020',
                 info: 'SOFTWARE ENGINEER'
             }
@@ -152,15 +152,19 @@ export const ExtraStack = [
         rate: 9
     },
     {
+        text: 'DEBUGGING',
+        rate: 8
+    },
+    {
         text: 'ALGORITHMS',
         rate: 6
     },
     {
-        text: 'TEAM LEADING',
+        text: 'LEADERSHIP',
         rate: 7
     },
     {
-        text: 'PROJECT ARCHITECTURE',
+        text: 'PROJECT ARCH. (React js)',
         rate: 7
     },
     {
@@ -170,8 +174,9 @@ export const ExtraStack = [
 
 ]
 export const Hobbies = [
-    {   text: 'Newspaper, books reading ' },
+    {   text: 'Newspaper, books reading' },
     {   text: 'Playing cricket, cycling' },
     {   text: 'Competitive Programming' },
     {   text: 'Listening songs' },
+    {   text: 'Travelling' },
 ]

@@ -56,7 +56,7 @@ const Component = () => {
                         <img src={Vineet} alt='vineet'/>
                         <div className="hor-row name-row">
                             Vineet Tanwar
-                            <br/> Full Stack Developer
+                            <br/> Software Engineer
                         </div>
                     </div>
                     <div className="hor-row right-heading-block">
@@ -64,7 +64,7 @@ const Component = () => {
                             CAREER GOALS
                         </div>
                         <div className="hor-row heading-second">
-                            To be get by a technology developed by me 
+                            To be get recognised by a technology developed by me. 
                         </div>
                         <div className="hor-row hor-line"></div>
                         { BasicInfo.map((item, i)=>(
@@ -109,7 +109,7 @@ const Component = () => {
                             
                                 <div className="hor-row card-text-row" key = {'i'+ i}>
                                     <div className="hor-row card-sub-heading">
-                                        { item.text }
+                                        { item.text + '.' }
                                     </div>
                                 </div>
                                 </div>
@@ -119,7 +119,7 @@ const Component = () => {
                     <div className="hor-row tech-stack-container">
                         <div className="hor-row card-main" >
                             <h3>
-                                EXTRA STACK
+                                SKILLS
                             </h3>
                             <div className="hor-row hor-line2"/>
                             { getTechStack(ExtraStack) }

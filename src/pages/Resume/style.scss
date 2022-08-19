@@ -26,10 +26,13 @@
 
         .header-container{
             display: grid;
-            grid-template-columns: 35% 65%;
+            grid-template-columns: 31% 69%;
             position: relative;
             grid-gap: 30px;
             font-weight: bold;
+            background: #f9f9f9;
+            padding-bottom: 15px;
+            border-radius: 0 0 5px 5px;
 
             .image-container{
                 text-align: center;
@@ -64,7 +67,7 @@
 
                 .basic-info-container{
                     display: grid;
-                    grid-template-columns: 110px auto;
+                    grid-template-columns: 80px auto;
                     grid-gap: 15px;
                     font-size: 12px;
                     padding: 2px 11px 2px 0;
@@ -152,6 +155,9 @@
             }
             .void-circle{
                 background: #c5c5c5!important;
+            }
+            .header-container{
+                background: #f9f9f9!important;
             }
             .main-content-main{
                 h3{
