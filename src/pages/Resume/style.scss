@@ -19,16 +19,16 @@
             margin-bottom: 40px;
         }
         .hor-line2{
-            height: 1.5px;
             margin: 0 0 10px;
-            background-color: #5f5ff7;
+            background: #bfbfbf;
+            height: 1px;
         }
 
         .header-container{
             display: grid;
             grid-template-columns: 31% 69%;
             position: relative;
-            grid-gap: 30px;
+            grid-gap: 20px;
             font-weight: bold;
             background: #f9f9f9;
             padding-bottom: 15px;
@@ -86,7 +86,7 @@
         }
         .circle2, .void-circle{ 
             border-radius: 20%;
-            background: #0f0aff;
+            background: #5f5ff7;
             margin-right: 5px;
             margin-top: 4px;
         }
@@ -145,13 +145,13 @@
                 background-color: #898484!important;
             }
             .hor-line2{
-                background-color: #5f5ff7!important;
+                background-color: #bfbfbf!important;
             }
             .circle{
                 background: black!important;
             }
             .circle2{ 
-                background: #0f0aff!important;
+                background: #5f5ff7!important;
             }
             .void-circle{
                 background: #c5c5c5!important;
