@@ -87,8 +87,10 @@
         .circle2, .void-circle{ 
             border-radius: 20%;
             background: #5f5ff7;
-            margin-right: 5px;
-            margin-top: 4px;
+            margin-top: 3px;
+            height: 8px;
+            margin-right: 4px;
+            width: 8px;
         }
         .void-circle{
             background: #c5c5c5;
@@ -99,6 +101,7 @@
             grid-template-columns: 50% 50%;
             position: relative;
             grid-gap: 30px;
+            padding-top: 100px;
 
             .card-main{
                 margin: 20px 0 -15px;
@@ -121,6 +124,11 @@
                 .date-row{
                     font-size: 10px;
                     letter-spacing: 1px;
+                    
+                }
+                .details{
+                    color: #525252;
+                    margin-top: 3px;
                 }
                 .card-heading{
                     font-size: 16px;
@@ -131,7 +139,10 @@
                 }
             }
             .tech-item-main{
-                padding: 0 0 20px 35px;
+                padding: 0 0 12px 35px;
+                .card-heading {
+                    font-size: 13.9px;
+                }
             }
 
         }

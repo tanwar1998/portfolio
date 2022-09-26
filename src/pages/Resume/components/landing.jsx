@@ -1,6 +1,6 @@
 import React from "react";
 import Vineet from '../../../assets/images/vineet.png';
-import {BasicInfo, BasicExp, TechStack, MainExp, ExtraStack, Hobbies } from './data.js';
+import {BasicInfo, BasicExp, TechStack, MainExp, ExtraStack, Hobbies, Internship } from './data.js';
 
 const Component = () => {
     
@@ -25,6 +25,12 @@ const Component = () => {
                             <div className="hor-row card-sub-heading">
                                 { subItem.info }
                             </div>
+                            {subItem.details?.map((data, k)=>(
+                                <div className="hor-row date-row details" key = {'details' + k} >
+                                    { '> ' + data }
+                                </div>
+                            ))}
+                            
                         </div>
                     </div>
                 ))}
@@ -84,7 +90,10 @@ const Component = () => {
                     <div className="hor-row">
                         {getExpData(BasicExp)}
                     </div>
-                    <div className="hor-row tech-stack-container">
+                    <div className="hor-row">
+                        {getExpData(Internship)}
+                    </div>
+                    {/* <div className="hor-row tech-stack-container">
                         <div className="hor-row card-main" >
                             <h3>
                                 TECH STACK
@@ -92,7 +101,7 @@ const Component = () => {
                             <div className="hor-row hor-line2"/>
                             { getTechStack(TechStack) }
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="hor-row main-content-main" style={{marginTop: '40px' , paddingBottom: '10px'}}>
@@ -117,6 +126,15 @@ const Component = () => {
                         </div>
                     </div>
                     <div className="hor-row tech-stack-container">
+                        <div className="hor-row tech-stack-container">
+                            <div className="hor-row card-main" >
+                                <h3>
+                                    TECH STACK
+                                </h3>
+                                <div className="hor-row hor-line2"/>
+                                { getTechStack(TechStack) }
+                            </div>
+                        </div>
                         <div className="hor-row card-main" >
                             <h3>
                                 SKILLS

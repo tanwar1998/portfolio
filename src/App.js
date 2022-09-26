@@ -5,8 +5,8 @@ import Resume from "./pages/Resume";
 
 function App() {
   return (
-    <Home />
-    // <Resume/>
+    // <Home />
+    <Resume/>
   );
 }
 
