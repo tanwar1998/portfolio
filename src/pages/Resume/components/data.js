@@ -52,9 +52,9 @@ export const BasicExp = [
                 date: '1 SEP, 2019 - 30 NOV, 2019',
                 info: 'COORDINATOR OF WEBSITE TEAM',
                 details:[
-                    'Team coordinator',
+                    'Team coordinator.',
                     'Write modern, performant, maintainable code for TP cell official website.',
-                    'Communicate with multi-disciplinary teams of developers, and Training & Plcacement cell officers on a weekly basis'
+                    'Communicate with multi-disciplinary teams of developers, and Training & Plcacement cell officers on a weekly basis.'
                 ]
             }
         ]
@@ -65,13 +65,13 @@ export const Internship = [
         h3: 'INTERNSHIP',
         details: [
             {
-                h4: 'READY TO GO PVT. LMT.',
-                date: '28 JUL, 2019 - 28 AUG, 2019',
-                info: 'BACKEND DEVELOPER USING PHP',
+                h4: '75WAY TECHNOLOGY',
+                date: '27 JAN, 2020 - 27 JULY 2020',
+                info: 'SOFTWARE ENGINEER',
                 details:[
-                    'Write modern, performant, maintainable code for a diverse array of client projects',
-                    'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, PHP',
-                    'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+                    'Write modern, performant, maintainable code for a diverse array of client projects.',
+                    'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Vue js, React, Angular, Node js.',
+                    'Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.'
                 ]
             },
             {
@@ -79,21 +79,19 @@ export const Internship = [
                 date: 'AUG 2019 - SEP 2019',
                 info: 'FULL STACK DEVELOPER',
                 details:[
-                    'Write modern, performant, maintainable code for internal projects',
-                    'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, React, Angular, AWS Lambda, Node js',
-                    'Communicate with teams of backend developer, and project manager on a daily basis'
+                    'Write modern, performant, maintainable code for internal projects.',
+                    'Tech Stack: JavaScript, React, Angular, AWS Lambda, Node js.',
                 ]
             },
             {
-                h4: '75WAY TECHNOLOGY',
-                date: '27 JAN, 2020 - 27 JULY 2020',
-                info: 'SOFTWARE ENGINEER',
+                h4: 'READY TO GO PVT. LMT.',
+                date: '28 JUL, 2019 - 28 AUG, 2019',
+                info: 'BACKEND DEVELOPER USING PHP',
                 details:[
-                    'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                    'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Vue js, React, Angular, Node js',
-                    'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+                    'Write modern, performant, maintainable code for a diverse array of client projects.',
+                    'Tech Stack: JavaScript, PHP.',
                 ]
-            }
+            },
         ]
     },
 ]
@@ -103,13 +101,13 @@ export const MainExp = [
         h3: 'EXPERIENCE',
         details: [
             {
-                h4: 'NANOTECH SOFT-APP IT SOLUTION',
-                date: 'SEPT, 2020 - MARCH, 2021',
-                info: 'PRODUCT DEVELOPER',
+                h4: 'DIGITIZE SOLUTIONS PVT LTD',
+                date: 'NOV 2021 - PRESENT',
+                info: 'SOFTWARE ENGINEER',
                 details:[
-                    'Project architecture and developer',
-                    'Write modern, performant, maintainable code for internal projects',
-                    'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
+                    'Write modern, performant, maintainable code for a diverse array of client projects.',
+                    'Working on a project for Motorola Solutions as a UI team lead from last 1 year. Also worked on other internal projects with react and threekit.',
+                    'Tech Stack: React js, Vue 2, Redux, Vuex, Node js, Threekit.'
                 ]
             },
             {
@@ -117,21 +115,21 @@ export const MainExp = [
                 date: 'MARCH, 2021 - SEPT 2021',
                 info: 'FULL STACK DEVELOPER',
                 details:[
-                    'Project architecture, team leader',
-                    'Write modern, performant, maintainable code for internal projects',
-                    'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
+                    'Project architecture, team leader for the frontend development for UPOS app.',
+                    'Communicate with multi-disciplinary teams of UI/UX designers, backend developer lead, project manager, CTO and QA testing team on a weekly basis.',
+                    "Tech Stack: React js, UNIT testing, Redux."
                 ]
             },
             {
-                h4: 'DIGITIZE SOLUTIONS PVT LTD',
-                date: 'NOV 2021 - PRESENT',
-                info: 'SOFTWARE ENGINEER',
+                h4: 'NANOTECH SOFT-APP IT SOLUTION',
+                date: 'SEPT, 2020 - MARCH, 2021',
+                info: 'PRODUCT DEVELOPER',
                 details:[
-                    'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                    'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Threekit, React, Node js, Heroku server',
-                    'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
+                    'Project architecture and lead developer for frontend developement.',
+                    'Communicate with multi-disciplinary teams of UI/UX designer, backend developer, and project manager on a daily basis.',
+                    "Tech Stack: React js, Redux."
                 ]
-            }
+            },
         ]
     },
 ]
@@ -154,8 +152,12 @@ export const TechStack = [
         rate: 9
     },
     {
-        text: 'REDUX JS',
-        rate: 8
+        text: 'FLUX ARCH.',
+        rate: 9
+    },
+    {
+        text: 'VUE JS',
+        rate: 7
     },
     {
         text: 'NODE JS',
@@ -163,14 +165,10 @@ export const TechStack = [
     },
     {
         text: 'MYSQL',
-        rate: 7
-    },
-    {
-        text: 'LARAVEL',
         rate: 6
     },
     {
-        text: 'VUE JS',
+        text: 'LARAVEL',
         rate: 6
     },
     {

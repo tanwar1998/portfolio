@@ -88,25 +88,16 @@ const Component = () => {
 
                 <div className="hor-row main-content-main">
                     <div className="hor-row">
-                        {getExpData(BasicExp)}
+                        {getExpData(MainExp)}
                     </div>
                     <div className="hor-row">
                         {getExpData(Internship)}
                     </div>
-                    {/* <div className="hor-row tech-stack-container">
-                        <div className="hor-row card-main" >
-                            <h3>
-                                TECH STACK
-                            </h3>
-                            <div className="hor-row hor-line2"/>
-                            { getTechStack(TechStack) }
-                        </div>
-                    </div> */}
                 </div>
 
                 <div className="hor-row main-content-main" style={{marginTop: '40px' , paddingBottom: '10px'}}>
                     <div className="hor-row">
-                        {getExpData(MainExp)}
+                        {getExpData(BasicExp)}
                         <div className="hor-row card-main" >
                             <h3>
                                 HOBBIES

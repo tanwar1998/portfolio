@@ -15,9 +15,9 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Software Engineer',
             details:[
-                'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Threekit, React, Node js, Heroku server',
-                'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
+                'Write modern, performant, maintainable code for a diverse array of client projects.',
+                'Working on a project for Motorola Solutions as a UI team lead from last 1 year. Also worked on other internal projects with react and threekit.',
+                'Tech Stack: React js, Vue 2, Redux, Vuex, Node js, Threekit.'
             ]
         },
         {
@@ -27,9 +27,9 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Full Stack Developer',
             details:[
-                'Project architecture, team leader',
-                'Write modern, performant, maintainable code for internal projects',
-                'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
+                'Project architecture, team leader for the frontend development for UPOS app.',
+                'Communicate with multi-disciplinary teams of UI/UX designers, backend developer lead, project manager, CTO and QA testing team on a weekly basis.',
+                "Tech Stack: React js, UNIT testing, Redux."
             ]
         },
         {
@@ -39,9 +39,9 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Product Developer',
             details:[
-                'Project architecture and developer',
-                'Write modern, performant, maintainable code for internal projects',
-                'Communicate with multi-disciplinary teams of designers, backend developer, and project manager on a daily basis'
+                'Project architecture and lead developer for frontend developement.',
+                'Communicate with multi-disciplinary teams of UI/UX designer, backend developer, and project manager on a daily basis.',
+                "Tech Stack: React js, Redux."
             ]
         },
         {
@@ -51,9 +51,9 @@ const ExperienceComponent = (props) => {
             type: 'Internship',
             post: 'Software Intern',
             details:[
-                'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Vue js, React, Angular, Node js',
-                'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis'
+                'Write modern, performant, maintainable code for a diverse array of client projects.',
+                'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Vue js, React, Angular, Node js.',
+                'Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.'
             ]
         },
         {
