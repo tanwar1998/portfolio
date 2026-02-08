@@ -1,10 +1,10 @@
 import React from "react";
 import Vineet from '../../../assets/images/vineet.png';
-import {BasicInfo, BasicExp, TechStack, MainExp, ExtraStack, Hobbies, Internship } from './data.js';
+import {BasicInfo, BasicExp, TechStack, MainExp, ExtraStack, Hobbies, Internship,newTech } from './data.js';
 
 const Component = () => {
     
-    const getExpData = (data) => {
+    const getExpData = (data, newFormat) => {
         return data.map((item, i)=>(
             <div className="hor-row card-main" key={i + 'subitem'}>
                 <h3>
@@ -25,7 +25,12 @@ const Component = () => {
                             <div className="hor-row card-sub-heading">
                                 { subItem.info }
                             </div>
-                            {subItem.details?.map((data, k)=>(
+                            {newFormat ? subItem.details2?.map((data, k)=>(
+                                <div className="hor-row date-row details" key = {'details' + k} >
+                                    <span style={{fontWeight: "bold"}}>{data.h1}</span>
+                                    { " " + data.h2 }
+                                </div>
+                            )) : subItem.details?.map((data, k)=>(
                                 <div className="hor-row date-row details" key = {'details' + k} >
                                     { '> ' + data }
                                 </div>
@@ -38,6 +43,28 @@ const Component = () => {
         ))
     }
 
+    const getNewTechStack = (content) => {
+        console.log('data in new text stack',content)
+        return content.map((data, i)=>(
+            <div className="hor-row tech-stack-container">
+                <div className="hor-row card-main" >
+                    <h3>
+                        { data.h1 }
+                    </h3>
+                    <div className="hor-row hor-line2"/>
+                    { data.list.map((item, i)=>(
+                        <div className="hor-row tech-item-main">
+                            <div className="hor-row card-heading" >
+                                <span style={{fontWeight: "bold"}}> { item.h1 }</span>
+                               
+                                {" " + item.h2 }
+                            </div>
+                        </div>
+                    )) }
+                </div>
+            </div>
+        ))
+    }
     const getTechStack = (data) => {
         return data.map((item, i)=>(
             <div className="hor-row tech-item-main">
@@ -53,7 +80,6 @@ const Component = () => {
         ))
     }
 
-
     return (
         <div className="hor-row resume-component-main">
             <div className="hor-row resume-component">
@@ -67,10 +93,10 @@ const Component = () => {
                     </div>
                     <div className="hor-row right-heading-block">
                         <div className="hor-row heading-main">
-                            CAREER GOALS
+                            PROFESSIONAL SUMMARY
                         </div>
                         <div className="hor-row heading-second">
-                            To be get recognised by a technology developed by me. 
+                        Innovative Software Engineer and UI Team Lead with 6+ years of experience architecting high-performance web applications for global brands like Motorola Solutions. Expert in the React/Vue/Node.js ecosystem with a track record of building maintainable, scalable architectures and mentoring cross-functional teams to meet aggressive delivery timelines. Driven by a commitment to sophisticated project architecture and industry-leading technology.
                         </div>
                         <div className="hor-row hor-line"></div>
                         { BasicInfo.map((item, i)=>(
@@ -88,14 +114,14 @@ const Component = () => {
 
                 <div className="hor-row main-content-main">
                     <div className="hor-row">
-                        {getExpData(MainExp)}
+                        {getExpData(MainExp,true)}
                     </div>
                     <div className="hor-row">
                         {getExpData(Internship)}
                     </div>
                 </div>
 
-                <div className="hor-row main-content-main" style={{marginTop: '40px' , paddingBottom: '10px'}}>
+                <div className="hor-row main-content-main" style={{marginTop: '-40px' , paddingBottom: '10px'}}>
                     <div className="hor-row">
                         {getExpData(BasicExp)}
                         <div className="hor-row card-main" >
@@ -117,22 +143,8 @@ const Component = () => {
                         </div>
                     </div>
                     <div className="hor-row tech-stack-container">
-                        <div className="hor-row tech-stack-container">
-                            <div className="hor-row card-main" >
-                                <h3>
-                                    TECH STACK
-                                </h3>
-                                <div className="hor-row hor-line2"/>
-                                { getTechStack(TechStack) }
-                            </div>
-                        </div>
-                        <div className="hor-row card-main" >
-                            <h3>
-                                SKILLS
-                            </h3>
-                            <div className="hor-row hor-line2"/>
-                            { getTechStack(ExtraStack) }
-                        </div>
+                       
+                        { getNewTechStack(newTech) }
                     </div>
                 </div>
             </div>

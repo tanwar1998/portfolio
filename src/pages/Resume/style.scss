@@ -26,9 +26,9 @@
 
         .header-container{
             display: grid;
-            grid-template-columns: 31% 69%;
+            grid-template-columns: 25% 75%;
             position: relative;
-            grid-gap: 20px;
+            grid-gap: 4px;
             font-weight: bold;
             background: #f9f9f9;
             padding-bottom: 15px;
@@ -60,8 +60,8 @@
                     font-weight: 700;
                 }
                 .heading-second{
-                    font-size: 13px;
-                    letter-spacing: 1px;
+                    font-size: 12px;
+                    letter-spacing: 0.6px;
                     padding: 10px 0 5px;
                 }
 
@@ -101,7 +101,7 @@
             grid-template-columns: calc(50% - 15px) calc(50% - 15px);
             position: relative;
             grid-gap: 30px;
-            padding-top: 100px;
+            padding-top: 120px;
 
             .card-main{
                 margin: 20px 0 -15px;
