@@ -71,33 +71,11 @@ const ScrollFX = () => {
                 });
 
                 gsap.utils.toArray('.main-heading-container .text').forEach((el) => {
-                    if (
-                        el.closest('.work-sample-container-main') ||
-                        el.closest('.service-container-main')
-                    ) return;
                     reveal(el, {
                         y: 36,
                         ...onEnter(el)
                     });
                 });
-
-                const headingUnderline = (sectionSel) =>
-                    gsap.fromTo(
-                        sectionSel + ' .main-heading-container .text',
-                        { backgroundSize: '0% 2px' },
-                        {
-                            backgroundSize: '100% 2px',
-                            duration: 0.9,
-                            ease: 'power2.inOut',
-                            scrollTrigger: {
-                                trigger: sectionSel + ' .main-heading-container',
-                                start: 'top 86%',
-                                once: true
-                            }
-                        }
-                    );
-                headingUnderline('.work-sample-container-main');
-                headingUnderline('.service-container-main');
                 gsap.utils.toArray('.info-text-container').forEach((el) => {
                     reveal(el, {
                         y: 28,
