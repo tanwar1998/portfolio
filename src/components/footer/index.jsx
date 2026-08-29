@@ -36,9 +36,9 @@ const FooterComponent = (props) => {
                     <div className="icon-container">
                         <LinkedinOutlined />
                     </div>
-                    <div className="icon-container">
+                    {/* <div className="icon-container">
                         <InstagramOutlined />
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

@@ -3,6 +3,7 @@ import React from "react";
 import './style.scss';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import DownloadIcon from '@mui/icons-material/Download';
 
 const navItems = [
     { label: 'Work', section: 'work' },
@@ -35,6 +36,13 @@ const NavbarComponent = (props) => {
                         ))}
                     </div>
                     <div className="setting-container">
+                        <a className="resume-link"
+                            href={ process.env.PUBLIC_URL + '/resume.pdf' }
+                            target="_blank" rel="noopener noreferrer"
+                            download="resume.pdf"
+                            aria-label="Download resume">
+                            <DownloadIcon className="icon-container resume-icon" />
+                        </a>
                         {props.currentMode === 'dark' ? <LightModeIcon className="icon-container"
                             onClick = {() => props.setMode('light')} />
                         : <DarkModeIcon className="icon-container"

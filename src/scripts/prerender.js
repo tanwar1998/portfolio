@@ -9,7 +9,7 @@ const puppeteer = require("puppeteer");
 const handler = require("serve-handler");
 const http = require("http");
 
-const BUILD_DIR = path.join(__dirname, "..", "build");
+const BUILD_DIR = path.join(__dirname, "..", "..", "build")
 const PORT = 45678;
 const BASE_PATH = "/portfolio"; // must match "homepage" in package.json
 const ROUTES = ["/"]; // add more routes here if you use react-router, e.g. "/about"
@@ -43,7 +43,27 @@ async function run() {
     await page.goto(url, { waitUntil: "networkidle0", timeout: 30000 });
 
     // give animation libraries (gsap, typewriter-effect, etc.) a moment to mount
-    await new Promise((r) => setTimeout(r, 1500));
+    await new Promise((r) => setTimeout(r, 3000));
+
+    // Scroll through the entire page so every section's reveal animation has
+    // fired and content is fully visible in the captured HTML. Without this the
+    // static build would bake hidden (opacity: 0) states for anything below the
+    // fold, leaving it invisible for reduced-motion / no-JS visitors.
+    await page.evaluate(() => {
+        return new Promise((resolve) => {
+            const max = document.documentElement.scrollHeight - window.innerHeight;
+            const step = () => {
+                window.scrollTo(0, window.scrollY + window.innerHeight);
+                if (window.scrollY < max) {
+                    window.setTimeout(step, 120);
+                } else {
+                    window.scrollTo(0, 0);
+                    window.setTimeout(resolve, 600);
+                }
+            };
+            step();
+        });
+    });
 
     const html = await page.content();
 

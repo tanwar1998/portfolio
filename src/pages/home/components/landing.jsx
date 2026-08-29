@@ -51,7 +51,7 @@ const LandingComponent = (props) => {
                         />
                     </h3>
                     <h5>
-                        Frontend engineer in Delhi, India. I architect large-scale React & TypeScript platforms, build design systems, and ship 3D configurators like Threekit.
+                        Frontend engineer in Bhiwani, Haryana(India). I architect large-scale React & TypeScript platforms, build design systems, and ship 3D configurators like Threekit.
                     </h5>
                     <ButtonComponent
                         onClick = { props.scrollTo } />

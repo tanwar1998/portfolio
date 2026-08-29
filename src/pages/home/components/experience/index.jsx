@@ -98,7 +98,7 @@ const ExperienceComponent = (props) => {
                 </div>
                 <h5 className="info-text-container">
                     I have worked in the software industry for the past 2 and half years. 
-                    <br/>Currently, I'm working as Software Engineer at Digitige Solutions.
+                    <br/>Currently, I'm working as Software Engineer at Digitize Solutions.
                 </h5>
 
                 <div className="hor-row experience-content-main">

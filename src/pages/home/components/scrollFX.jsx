@@ -71,11 +71,33 @@ const ScrollFX = () => {
                 });
 
                 gsap.utils.toArray('.main-heading-container .text').forEach((el) => {
+                    if (
+                        el.closest('.work-sample-container-main') ||
+                        el.closest('.service-container-main')
+                    ) return;
                     reveal(el, {
                         y: 36,
                         ...onEnter(el)
                     });
                 });
+
+                const headingUnderline = (sectionSel) =>
+                    gsap.fromTo(
+                        sectionSel + ' .main-heading-container .text',
+                        { backgroundSize: '0% 2px' },
+                        {
+                            backgroundSize: '100% 2px',
+                            duration: 0.9,
+                            ease: 'power2.inOut',
+                            scrollTrigger: {
+                                trigger: sectionSel + ' .main-heading-container',
+                                start: 'top 86%',
+                                once: true
+                            }
+                        }
+                    );
+                headingUnderline('.work-sample-container-main');
+                headingUnderline('.service-container-main');
                 gsap.utils.toArray('.info-text-container').forEach((el) => {
                     reveal(el, {
                         y: 28,
@@ -84,17 +106,51 @@ const ScrollFX = () => {
                     });
                 });
 
-                reveal('.work-block-main', {
-                    y: 64,
+                gsap.from('.work-block-main', {
+                    autoAlpha: 0,
+                    y: 70,
+                    scale: 0.96,
+                    duration: 0.85,
+                    ease: 'back.out(1.35)',
                     stagger: 0.12,
-                    ...onEnter('.work-sample-content-main', true)
+                    borderBottomColor: 'rgba(99, 102, 241, 0)',
+                    boxShadow: '0 0 28px rgba(99, 102, 241, 0.45)',
+                    clearProps: 'opacity,transform,visibility,border-bottom-color,box-shadow',
+                    scrollTrigger: {
+                        trigger: '.work-sample-content-main',
+                        start: 'top 82%',
+                        once: true
+                    }
                 });
 
-                reveal('.service-item', {
-                    y: 64,
-                    stagger: 0.12,
-                    ...onEnter('.services-item-container', true)
-                });
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.services-item-container',
+                        start: 'top 80%',
+                        once: true
+                    }
+                })
+                    .fromTo(
+                        '.service-curtain-band',
+                        { xPercent: -60 },
+                        { xPercent: 160, duration: 1.1, ease: 'power2.inOut' },
+                        0
+                    )
+                    .fromTo(
+                        '.service-item',
+                        { autoAlpha: 0, y: 40 },
+                        {
+                            autoAlpha: 1,
+                            y: 0,
+                            duration: 0.6,
+                            ease: 'power3.out',
+                            stagger: 0.1,
+                            immediateRender: true,
+                            clearProps: 'opacity,transform,visibility'
+                        },
+                        0.25
+                    )
+                    .set('.service-curtain-band', { autoAlpha: 0, transform: 'none' }, '+=0.1');
 
                 reveal('.company-name', {
                     y: 24,

@@ -37,6 +37,7 @@ const ServiceComponent = (props) => {
                 </h5>
 
                 <div className="hor-row services-item-container">
+                    <div className="service-curtain-band" aria-hidden="true" />
                     {services.map((service, index)=>(  <div className="service-item" key={'service'+index}>
                             <div className=" hor-row service-item-inner-container">
                                 <div className="icon-container">

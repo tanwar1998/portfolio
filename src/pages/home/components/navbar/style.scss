@@ -79,6 +79,23 @@
             display: inline-block;
             float: right;
 
+            .resume-link{
+                display: inline-block;
+                float: left;
+                margin: 0 18px 0 0;
+                line-height: 0;
+
+                .resume-icon{
+                    font-size: 20px;
+                    color: $accent;
+                    transition: color 0.3s ease;
+
+                    &:hover{
+                        color: $accent-light;
+                    }
+                }
+            }
+
             .icon-container{
                 cursor: pointer;
                 font-size: 20px;
@@ -142,6 +159,14 @@
                 }
             }
             .setting-container{
+                .resume-link{
+                    .resume-icon{
+                        color: $accent-hover;
+                        &:hover{
+                            color: $accent;
+                        }
+                    }
+                }
                 .icon-container{
                     color: $light-muted;
                     &:hover{

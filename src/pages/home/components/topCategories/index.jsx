@@ -129,7 +129,7 @@ const TopCategoriesComponent = (props) => {
                     </div>
                 </div>
                 <h5 className="info-text-container">
-                    I currently work remotely with a selected freelance client base being open for new opportunities.
+                    Currently building distributed systems at Digitize Solutions, working with a stack spanning React, TypeScript, and 3D web tools.
                 
                     <br/>Check out my some of tech stacks.
                 </h5>

@@ -28,12 +28,12 @@ const HireMeComponent = (props) => {
                         <a href = 'https://www.linkedin.com/in/vineet-tanwar/' target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <LinkedinOutlined />
                         </a>
-                        <a href = 'https://www.instagram.com/vineettanwar2000/' target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        {/* <a href = 'https://www.instagram.com/vineettanwar2000/' target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <InstagramOutlined />
                         </a>
                         <a href = 'https://www.facebook.com/vineet.tanwar.180/' target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FacebookOutlined />
-                        </a>
+                        </a> */}
                         <a href = 'mailto:vineettanwar1998@gmail.com' aria-label="Email">
                             <MailOutlined />
                         </a>

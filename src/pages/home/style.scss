@@ -51,6 +51,10 @@ html{
             display: inline-block;
             padding: 4px 0;
             font-weight: 555;
+            background-image: linear-gradient($accent, $accent);
+            background-repeat: no-repeat;
+            background-position: 0 100%;
+            background-size: 0% 2px;
 
             &:after{
                 content: '';
