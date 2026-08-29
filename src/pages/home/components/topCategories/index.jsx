@@ -120,7 +120,8 @@ const techStack = [
 const TopCategoriesComponent = (props) => {
 
     return (
-        <div className="hor-row sticky-component component-back categories-container-main">
+        <div className="hor-row sticky-component component-back categories-container-main"
+            ref = { props.tmpRef }>
             <div className="app-content-container">
                 <div className="hor-row main-heading-container">
                     <div className="text">

@@ -1,3 +1,4 @@
+@import '../../styles/variables';
 
 .button-container-main{
     display: inline-block;
@@ -8,14 +9,15 @@
     border-radius: 10px;
     position: relative;
     color: inherit;
-    font-weight: 555;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     border-radius: 10px;
+    cursor: pointer;
 
 
     .back-circle-container{
         width: 45px;
-        background: linear-gradient(45deg, #3276fb, #2554b1);
+        background: $accent-gradient;
         height: 45px;
         border-radius: 50%;
         position: absolute;
@@ -32,6 +34,10 @@
         position: relative;
         transition: all ease-in 0.3s;
         border-radius: 10px;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        cursor: pointer;
     }
     &:hover{
         .back-circle-container{
@@ -39,7 +45,12 @@
             border-radius: 10px;
         }
         .custom-button-class{
+            color: #fff;
             box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0 , 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
         }
+    }
+    &:focus-visible{
+        outline: 2px solid $accent;
+        outline-offset: 3px;
     }
 }

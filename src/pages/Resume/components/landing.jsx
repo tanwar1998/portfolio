@@ -1,6 +1,6 @@
 import React from "react";
 import Vineet from '../../../assets/images/vineet.png';
-import {BasicInfo, BasicExp, TechStack, MainExp, ExtraStack, Hobbies, Internship,newTech } from './data.js';
+import {BasicInfo, BasicExp, MainExp, Hobbies, Internship,newTech } from './data.js';
 
 const Component = () => {
     
@@ -67,13 +67,13 @@ const Component = () => {
     }
     const getTechStack = (data) => {
         return data.map((item, i)=>(
-            <div className="hor-row tech-item-main">
+            <div className="hor-row tech-item-main" key={'t'+i}>
                 <div className="hor-row card-heading">
                     { item.text }
                 </div>
                 <div className="hor-row tech-item-container">
                     {Array.from({ length: 10 }).map((el, i) =>(
-                        <span className={ i < item.rate ? "circle2" : 'void-circle'}/>
+                        <span key={'c'+i} className={ i < item.rate ? "circle2" : 'void-circle'}/>
                     ))}
                 </div>
             </div>

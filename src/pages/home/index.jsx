@@ -6,8 +6,8 @@ import ServiceComponent from './components/service';
 import ExperienceComponent from './components/experience';
 import TopCategoriesComponent from './components/topCategories';
 import HireMeComponent from './components/hireMe';
+import ScrollFX from './components/scrollFX';
 import './style.scss';
-import AnimatedCursor from "react-animated-cursor"
 
 
 class HomeContainer extends Component {
@@ -18,33 +18,44 @@ class HomeContainer extends Component {
         };
     }
 
+    workRef = React.createRef();
+    serviceRef = React.createRef();
+    experienceRef = React.createRef();
+    skillsRef = React.createRef();
     hireMeRef = React.createRef();
-    scrollTo = () => {
-        console.log('scroller')
-        window.scrollTo({ behavior: 'smooth', top: this.hireMeRef.current.offsetTop })
+
+    scrollTo = (section) => {
+        const refs = {
+            work: this.workRef,
+            service: this.serviceRef,
+            experience: this.experienceRef,
+            skills: this.skillsRef,
+            contact: this.hireMeRef
+        };
+        const target = refs[section] ? refs[section].current : this.hireMeRef.current;
+        if (!target) return;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     render() {
-        console.log('rerendering')
         return (
             <div className={"hor-row home-component-main" + ( this.state.currentMode === 'dark' ? '' : ' light-mode-container')}>
-                <AnimatedCursor
-                    innerSize={12}
-                    outerSize={12}
-                    color='11, 168, 193'
-                    outerAlpha={0.2}
-                    innerScale={0.7}
-                    outerScale={5}/>
                 <LandingComponent
-                    scrollTo = {() => this.scrollTo() } />
+                    scrollTo = {() => this.scrollTo('contact')} />
                 <NavbarComponent
                     currentMode = { this.state.currentMode }
-                    setMode = {(mode)=>this.setState({currentMode: mode})} />
-                <WorkComponent />
-                <ServiceComponent/>
-                <ExperienceComponent/>
-                <TopCategoriesComponent />
+                    setMode = {(mode)=>this.setState({currentMode: mode})}
+                    scrollTo = {(section) => this.scrollTo(section)} />
+                <WorkComponent
+                    tmpRef = {this.workRef} />
+                <ServiceComponent
+                    tmpRef = {this.serviceRef} />
+                <ExperienceComponent
+                    tmpRef = {this.experienceRef} />
+                <TopCategoriesComponent
+                    tmpRef = {this.skillsRef} />
                 <HireMeComponent tmpRef = {this.hireMeRef} />
+                <ScrollFX />
             </div>
         )
     }

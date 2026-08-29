@@ -4,6 +4,13 @@ import './style.scss';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
+const navItems = [
+    { label: 'Work', section: 'work' },
+    { label: 'Services', section: 'service' },
+    { label: 'Experience', section: 'experience' },
+    { label: 'Skills', section: 'skills' },
+    { label: 'Contact', section: 'contact' }
+];
 
 const NavbarComponent = (props) => {
     return (
@@ -17,6 +24,16 @@ const NavbarComponent = (props) => {
                     </span>
                 </div>
                 <div className="nav-link-container">
+                    <div className="nav-links-main">
+                        {navItems.map((item)=>(
+                            <span
+                                className="link-content"
+                                key={item.section}
+                                onClick={() => props.scrollTo(item.section)}>
+                                { item.label }
+                            </span>
+                        ))}
+                    </div>
                     <div className="setting-container">
                         {props.currentMode === 'dark' ? <LightModeIcon className="icon-container"
                             onClick = {() => props.setMode('light')} />

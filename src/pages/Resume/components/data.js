@@ -14,7 +14,7 @@ export const BasicInfo = [
     },
     {
         key: 'Portfolio',
-        value: (<a href="https://tanwar1998.github.io/portfolio/"></a>),
+        value: (<a href="https://tanwar1998.github.io/portfolio/">Portfolio</a>),
         link: true
     },
     {
@@ -105,9 +105,8 @@ export const MainExp = [
                 date: 'SEPT, 2020 - MARCH, 2021',
                 info: 'PRODUCT DEVELOPER',
                 details:[
-                    'Project architecture and lead developer for frontend developement.',
-                    'Communicate with multi-disciplinary teams of UI/UX designer, backend developer, and project manager on a daily basis.',
-                    "Tech Stack: React js, Redux."
+                    "Acted as lead developer for frontend initiatives, owning initial project architecture and core feature development.",
+                    "Built robust state management systems using React.js and Redux; collaborated daily with designers and engineers in an agile workflow."
                 ],
                 details2:[
 
@@ -130,9 +129,11 @@ export const MainExp = [
                 date: 'MARCH, 2021 - SEPT 2021',
                 info: 'FULL STACK DEVELOPER',
                 details:[
-                    'Project architecture, team leader for the frontend development for UPOS app.',
-                    'Communicate with multi-disciplinary teams of UI/UX designers, backend developer lead, project manager, CTO and QA testing team on a weekly basis.',
-                    "Tech Stack: React js, UNIT testing, Redux."
+                    "Designed the architectural contract and API integration strategy (REST/GraphQL) between the UPOS mobile/web system and backend microservices." ,
+
+                    "Built client-side data architecture and caching layers using Redux, reducing redundant network calls and improving responsiveness.",
+
+                    "Implemented unit testing protocols alongside React and Redux to improve application stability and reduce production bugs"
                 ],
                 details2:[
 
@@ -155,9 +156,13 @@ export const MainExp = [
                 date: 'NOV 2021 - PRESENT',
                 info: 'SOFTWARE ENGINEER',
                 details:[
-                    'Write modern, performant, maintainable code for a diverse array of client projects.',
-                    'Working on a project for Motorola Solutions as a UI team lead from last 2 years. Also worked on other internal projects with react and threekit.',
-                    'Tech Stack: React js, Vue 2, Redux, Vuex, Node js, Threekit.'
+                    "Headed frontend systems architecture for an enterprise-scale Motorola Solutions platform for 3+ years, defining modular design patterns and data contracts between client and backend microservices.",
+
+                    " Architected integration of Threekit 3D configuration tools into a React ecosystem, managing complex data sync and asset-loading performance for a smoother user experience.",
+
+                    "Led a team of engineers, standardizing linting, automated unit testing, and CI/CD pipelines to maintain architectural integrity across distributed client applications.",
+
+                    "Leveraged AI coding assistants (Copilot, ChatGPT) across development, debugging, code review, and documentation to speed up delivery cycles."
                 ],
                 details2:[
                     {

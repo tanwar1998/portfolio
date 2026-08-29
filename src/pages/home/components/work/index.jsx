@@ -4,16 +4,23 @@ import './style.scss';
 import GlobalGarner from '../../../../assets/images/global.png';
 import Visably from '../../../../assets/images/visably.png';
 import Limecall from '../../../../assets/images/lime.png';
+import FitCoach from '../../../../assets/images/fitness-coach.png';
 import { LaunchOutlined } from '@mui/icons-material';
 
 const WorkComponent = (props) => {
     const work = [
         {
-            text: 'I worked as project architecture and team leader for the frontend developer.',
-            stack: [ 'React js', 'Material UI', 'Redux', 'Axios' ],
-            image: GlobalGarner, 
-            link: 'https://globalgarner.com/'
+            text: 'Personal project - FitCoach: a free fitness web app with a workout generator, searchable exercise library, exercise video explorer, goal tracking and an AI coach with persistent chat sessions.',
+            stack: [ 'Next.js', 'React', 'TypeScript', 'Tailwind CSS' ],
+            image: FitCoach, 
+            link: 'https://fitness-coach-79yi.onrender.com/'
         },
+        // {
+        //     text: 'I worked as project architecture and team leader for the frontend developer.',
+        //     stack: [ 'React js', 'Material UI', 'Redux', 'Axios' ],
+        //     image: GlobalGarner, 
+        //     link: 'https://globalgarner.com/'
+        // },
         {
             text: 'I  worked as front end developer to implement Figma Design and new features.',
             stack: [ 'React js', 'Typescript', 'Redux', 'Tailwind CSS' ],
@@ -57,7 +64,8 @@ const WorkComponent = (props) => {
                                         </span>
                                     )) }
                                 </div>
-                                <a className="hor-row visit-link" href={ item.link }>
+                                <a className="hor-row visit-link" href={ item.link }
+                                    target="_blank" rel="noopener noreferrer" aria-label="Open project">
                                     <LaunchOutlined className='icon'/>
                                 </a>
                             </div>

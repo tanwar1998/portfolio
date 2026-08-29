@@ -1,0 +1,36 @@
+// ---- Portfolio theme palette (Modern Indigo / Violet) ----
+
+// Primary accents
+$accent:                #6366f1;   // indigo-500
+$accent-hover:          #4f46e5;   // indigo-600
+$accent-light:          #818cf8;   // indigo-400 (hover text / highlights)
+$accent-soft:           #8b5cf6;   // violet-500 (gradient partner)
+$accent-deep:           #4338ca;   // indigo-700
+
+// Dark mode surfaces
+$dark-bg:               #050508;
+$dark-bg-alt:           #0d0d16;
+$dark-card:             #10101b;
+$dark-card-hover:       #16162a;
+$dark-border:           rgba(255, 255, 255, 0.08);
+
+// Dark mode text
+$dark-text:             #f0f0f7;
+$dark-muted:            #a5a5b8;
+$dark-faint:            #76768a;
+
+// Light mode surfaces
+$light-bg:              #ffffff;
+$light-bg-alt:          #f1f4ff;
+$light-card:            #ffffff;
+$light-border:          rgba(24, 24, 48, 0.12);
+
+// Light mode text
+$light-text:            #14141c;
+$light-muted:           #3f3f4d;
+$light-faint:           #666672;
+
+// Gradients
+$accent-gradient:       linear-gradient(45deg, #6366f1, #8b5cf6);
+$dark-gradient-bg:      linear-gradient( 180deg , #050508, #0d0d16, #050508);
+$light-gradient-bg:     linear-gradient( 180deg , #ffffff, #f1f4ff, #ffffff);

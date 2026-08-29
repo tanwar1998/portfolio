@@ -1,7 +1,40 @@
+@import './variables';
 
 body{
     scroll-behavior: smooth;
+    background-color: $dark-bg;
+    color: $dark-text;
 }
+
+::selection{
+    background: $accent;
+    color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: $dark-bg-alt;
+}
+::-webkit-scrollbar-thumb{
+    background: $accent;
+    border-radius: 6px;
+}
+
+body:has(.light-mode-container){
+    background-color: $light-bg;
+    color: $light-text;
+
+    ::-webkit-scrollbar-track{
+        background: $light-bg-alt;
+    }
+}
+
 .center{
     text-align: center;
 }
@@ -22,8 +55,6 @@ h2{
     text-align: left;
     font-size: 35px;
 }
-
-
 
 .app-content-container{
     width: 100%;

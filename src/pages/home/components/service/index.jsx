@@ -23,7 +23,8 @@ const services = [
 const ServiceComponent = (props) => {
 
     return (
-        <div className="hor-row sticky-component component-back service-container-main">
+        <div className="hor-row sticky-component component-back service-container-main"
+            ref = { props.tmpRef }>
             <div className="app-content-container">
                 <div className="hor-row main-heading-container">
                     <div className="text">
@@ -36,7 +37,7 @@ const ServiceComponent = (props) => {
                 </h5>
 
                 <div className="hor-row services-item-container">
-                    {services.map((service)=>(  <div className="service-item">
+                    {services.map((service, index)=>(  <div className="service-item" key={'service'+index}>
                             <div className=" hor-row service-item-inner-container">
                                 <div className="icon-container">
                                     {/* <CodeOutlined/> */}

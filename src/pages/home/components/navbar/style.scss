@@ -1,52 +1,78 @@
+@import '../../../../styles/variables';
 
 .navbar-container-main{
-    background: #000;
+    background: rgba(5, 5, 8, 0.9);
+    backdrop-filter: blur(10px);
     text-align: center;
-    padding: 10px 0px;
+    padding: 12px 0px;
     z-index: 50;
     position: fixed!important;
-
+    box-shadow: 0 2px 18px rgba(0,0,0,0.45);
 
     .logo-container-main{
-        width: 200px;
+        width: auto;
         margin-top: -3px;
         text-align: left;
         padding: 0 20px 0 0;
         font-size: 25px;
         font-weight: bold;
-        color: #3276fb;
+        color: $accent;
         display: inline-block;
         float: left;
-        margin-right: 50px;
+        margin-right: 30px;
+        letter-spacing: 1px;
 
         .special-character{
             font-weight: 500;
-            font-size: 35px;
-            color: #fff;
-            margin-right: -10px;
+            font-size: 32px;
+            color: $dark-text;
+            margin-right: -6px;
         }
-
-
     }
     .nav-link-container{
         display: inline-block;
         float: left;
-        width: calc(100% - 250px);
+        width: calc(100% - 200px);
         box-sizing: border-box;
-        padding-top: 16px;
-        color: #3939df;
+        padding-top: 12px;
+        color: $accent;
 
-        .link-content{
+        .nav-links-main{
             display: inline-block;
             float: left;
-            box-sizing: border-box;
-            cursor: pointer;
-            transition: all ease-in 0.3s;
-            margin: 0 10px;
-            font-size: 14px;
 
-            &:hover{
-                color: #a6c4ff;
+            .link-content{
+                display: inline-block;
+                float: left;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: color ease-in 0.3s;
+                margin: 0 14px;
+                font-size: 15px;
+                font-weight: 500;
+                color: #d4d4d8;
+                position: relative;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $accent;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+
+                &:hover{
+                    color: #fff;
+                    &:after{
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
             }
         }
         .setting-container{
@@ -55,31 +81,72 @@
 
             .icon-container{
                 cursor: pointer;
-                font-size: 18px;
+                font-size: 20px;
+                color: $dark-muted;
+                transition: color 0.3s ease;
+
+                &:hover{
+                    color: $accent-light;
+                }
             }
         }
     }
 
     @media only screen and (max-width: 1200px){
-        position: absolute!important;
+        position: fixed!important;
+
+        .nav-link-container{
+            width: calc(100% - 210px);
+        }
+    }
+    @media only screen and (max-width: 768px){
+        padding: 10px 0;
+
+        .logo-container-main{
+            padding: 0 12px 0 0;
+            font-size: 21px;
+            .special-character{ font-size: 27px; }
+        }
+        .nav-link-container{
+            width: auto;
+            float: right;
+            padding-top: 9px;
+
+            .nav-links-main{
+                display: none;
+            }
+        }
     }
 }
 
 .light-mode-container{
     .navbar-container-main{
-        background: #fff;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 2px 18px rgba(20,20,40,0.10);
+
         .logo-container-main{
-            color: #3276fb;
+            color: $accent-hover;
             .special-character{
-                color: #000;
+                color: $light-text;
             }
         }
         .nav-link-container{
-            color: #3939df;
+            color: $accent-hover;
 
-            .link-content{
-                &:hover{
-                    color: #898989;
+            .nav-links-main{
+                .link-content{
+                    color: $light-muted;
+                    &:hover{
+                        color: $accent-hover;
+                    }
+                }
+            }
+            .setting-container{
+                .icon-container{
+                    color: $light-muted;
+                    &:hover{
+                        color: $accent;
+                    }
                 }
             }
         }

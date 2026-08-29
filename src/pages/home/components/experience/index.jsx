@@ -15,10 +15,14 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Software Engineer',
             details:[
-                'Write modern, performant, maintainable code for a diverse array of client projects.',
-                'Working on a project for Motorola Solutions as a UI team lead from last 1 year. Also worked on other internal projects with react and threekit.',
-                'Tech Stack: React js, Vue 2, Redux, Vuex, Node js, Threekit.'
-            ]
+                    "Headed frontend systems architecture for an enterprise-scale Motorola Solutions platform for 3+ years, defining modular design patterns and data contracts between client and backend microservices.",
+
+                    " Architected integration of Threekit 3D configuration tools into a React ecosystem, managing complex data sync and asset-loading performance for a smoother user experience.",
+
+                    "Led a team of engineers, standardizing linting, automated unit testing, and CI/CD pipelines to maintain architectural integrity across distributed client applications.",
+
+                    "Leveraged AI coding assistants (Copilot, ChatGPT) across development, debugging, code review, and documentation to speed up delivery cycles."
+                ]
         },
         {
             shortName: 'Global Garner',
@@ -27,10 +31,12 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Full Stack Developer',
             details:[
-                'Project architecture, team leader for the frontend development for UPOS app.',
-                'Communicate with multi-disciplinary teams of UI/UX designers, backend developer lead, project manager, CTO and QA testing team on a weekly basis.',
-                "Tech Stack: React js, UNIT testing, Redux."
-            ]
+                    "Designed the architectural contract and API integration strategy (REST/GraphQL) between the UPOS mobile/web system and backend microservices." ,
+
+                    "Built client-side data architecture and caching layers using Redux, reducing redundant network calls and improving responsiveness.",
+
+                    "Implemented unit testing protocols alongside React and Redux to improve application stability and reduce production bugs"
+                ]
         },
         {
             shortName: 'Nanotech Soft-App',
@@ -39,10 +45,9 @@ const ExperienceComponent = (props) => {
             type: 'Full Time Job',
             post: 'Product Developer',
             details:[
-                'Project architecture and lead developer for frontend developement.',
-                'Communicate with multi-disciplinary teams of UI/UX designer, backend developer, and project manager on a daily basis.',
-                "Tech Stack: React js, Redux."
-            ]
+                    "Acted as lead developer for frontend initiatives, owning initial project architecture and core feature development.",
+                    "Built robust state management systems using React.js and Redux; collaborated daily with designers and engineers in an agile workflow."
+                ]
         },
         {
             shortName: '75way',
@@ -83,7 +88,8 @@ const ExperienceComponent = (props) => {
     ]
 
     return (
-        <div className="hor-row sticky-component component-back experience-container-main" >
+        <div className="hor-row sticky-component component-back experience-container-main"
+            ref = { props.tmpRef }>
             <div className="app-content-container">
                 <div className="hor-row main-heading-container">
                     <div className="text">
@@ -99,7 +105,8 @@ const ExperienceComponent = (props) => {
                     <div className="left-side-container">
                         {
                             companies.map((company, index)=>(
-                            <div className={"hor-row company-name" + ( index === openedIndex ? ' selected-company-name':'') }
+                            <div className={ "hor-row company-name " + ( index === openedIndex ? 'selected-company-name':'') }
+                                key={ 'company' + index }
                                 onClick={ () =>  setOpenedIndex(index)}>
                                 { company.shortName }
                             </div>
@@ -122,12 +129,11 @@ const ExperienceComponent = (props) => {
                         </div>
                         <div className="hor-row experience-info-main">
                             {
-                                companies[openedIndex].details.map((detail)=>(
-                                    <>
+                                companies[openedIndex].details.map((detail, index)=>(
+                                    <p className="detail-item" key={ 'detail' + index }>
                                         <RightCircleOutlined className="info-icon" />
-                                        { detail + '.' }
-                                        <br/> <br/>
-                                    </>
+                                        <span>{ detail + '.' }</span>
+                                    </p>
                                 ))
                             }
                         </div>
