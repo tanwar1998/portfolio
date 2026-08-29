@@ -6,17 +6,17 @@ const services = [
     {
         icon: <CodeOutlined/>,
         heading: 'Front End Development',
-        info: 'Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices for SEO optimisation. Use modern tech such as Nuxt (Vue.js), TailwindCSS, and GSAP.'
+        info: 'Product-grade web apps in React, Next.js and TypeScript — scalable architecture, design systems, and interface motion.'
     },
     {
         icon: <BuildOutlined/>,
         heading: 'Back End Development',
-        info: 'Build scalable and maintainable server applications using modern technology stacks such as Node.js, Express, and MongoDB, Mysql, Laravel, CodeIgniter'
+        info: 'Node.js, Express and MongoDB/MySQL backends, with REST/GraphQL contracts designed to scale with your frontend.'
     },
     {
         icon: <DesktopOutlined/>,
         heading: 'User Experience Development',
-        info: `I design your website to be as easy to use as possible while guiding users towards the end goal. Putting the user's experience first, will ensure more loyal users increasing long term sales.`
+        info: 'Figma to pixel-perfect, accessible interfaces — interaction design, performance, and WebGL / 3D product configurators.'
     }
 ]
 
