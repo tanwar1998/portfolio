@@ -140,3 +140,49 @@
         }
     }
 }
+
+.vibrant-mode-container{
+    .experience-content-main{
+        .left-side-container{
+            .company-name{
+                color: $v-muted;
+                border-left: 2px solid rgba(255,46,147,0.35);
+                &:hover{
+                    background: rgba(255,46,147,0.12);
+                    color: $v-text;
+                    border-left-color: $v-pink;
+                }
+            }
+            .selected-company-name{
+                background: $v-gradient;
+                color: #0a0416;
+                font-weight: 700;
+                border-left-color: $v-cyan;
+                box-shadow: 0 0 20px rgba(255,46,147,0.5);
+
+                &:hover{
+                    background: $v-gradient;
+                    color: #0a0416;
+                }
+            }
+        }
+        .right-side-container{
+            .duration-text{
+                color: $v-cyan;
+                text-shadow: 0 0 14px rgba(6,214,208,0.5);
+            }
+            .job-type-text{
+                color: $v-faint;
+            }
+            h2{
+                color: $v-text;
+            }
+            .experience-info-main{
+                color: $v-muted;
+                .info-icon{
+                    color: $v-pink;
+                }
+            }
+        }
+    }
+}

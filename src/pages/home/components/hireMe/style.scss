@@ -66,3 +66,35 @@
         }
     }
 }
+
+.vibrant-mode-container{
+    .hire-me-container-main{
+        .hire-me-text{
+            h2{
+                background: $v-gradient;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 16px rgba(255,46,147,0.35));
+            }
+            h5{
+                color: $v-muted;
+            }
+        }
+        .links-container-main{
+            a{
+                color: $v-cyan;
+                background: rgba(255,46,147,0.08);
+                border: 1px solid rgba(255,46,147,0.28);
+
+                &:hover{
+                    color: #0a0416;
+                    background: $v-gradient;
+                    border-color: transparent;
+                    transform: translateY(-4px) scale(1.04);
+                    box-shadow: 0 12px 30px rgba(255,46,147,0.45), 0 0 40px rgba(6,214,208,0.25);
+                }
+            }
+        }
+    }
+}

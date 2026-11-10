@@ -54,3 +54,26 @@
         outline-offset: 3px;
     }
 }
+
+.vibrant-mode-container{
+    .button-container-main{
+        color: $v-text;
+
+        .back-circle-container{
+            background: $v-gradient;
+            box-shadow: 0 0 22px rgba(255,46,147,0.55);
+        }
+        &:hover{
+            .back-circle-container{
+                box-shadow: 0 0 34px rgba(6,214,208,0.55);
+            }
+            .custom-button-class{
+                color: #0a0416;
+                font-weight: 700;
+            }
+        }
+        &:focus-visible{
+            outline: 2px solid $v-cyan;
+        }
+    }
+}

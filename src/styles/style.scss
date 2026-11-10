@@ -69,3 +69,20 @@ h2{
         padding: 0 20px;
     }
 }
+
+body:has(.vibrant-mode-container){
+    background-color: $v-bg;
+    color: $v-text;
+
+    ::selection{
+        background: $v-pink;
+        color: #0a0416;
+    }
+    ::-webkit-scrollbar-track{
+        background: $v-bg-alt;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: $v-gradient;
+        border-radius: 6px;
+    }
+}

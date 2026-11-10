@@ -1,8 +1,8 @@
-
 import React from "react";
 import './style.scss';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import DownloadIcon from '@mui/icons-material/Download';
 
 const navItems = [
@@ -11,6 +11,12 @@ const navItems = [
     { label: 'Experience', section: 'experience' },
     { label: 'Skills', section: 'skills' },
     { label: 'Contact', section: 'contact' }
+];
+
+const themeOptions = [
+    { mode: 'light', label: 'Day theme', Icon: LightModeIcon },
+    { mode: 'dark', label: 'Night theme', Icon: DarkModeIcon },
+    { mode: 'vibrant', label: 'Vibrant theme', Icon: AutoAwesomeIcon }
 ];
 
 const NavbarComponent = (props) => {
@@ -43,11 +49,20 @@ const NavbarComponent = (props) => {
                             aria-label="Download resume">
                             <DownloadIcon className="icon-container resume-icon" />
                         </a>
-                        {props.currentMode === 'dark' ? <LightModeIcon className="icon-container"
-                            onClick = {() => props.setMode('light')} />
-                        : <DarkModeIcon className="icon-container"
-                            onClick = {() => props.setMode('dark')} />
-                        }
+                        <div className="theme-switcher" role="group" aria-label="Theme selection">
+                            {themeOptions.map(({ mode, label, Icon }) => (
+                                <button
+                                    type="button"
+                                    key={mode}
+                                    title={label}
+                                    aria-label={label}
+                                    aria-pressed={props.currentMode === mode}
+                                    className={'theme-option' + (props.currentMode === mode ? ' theme-option-active' : '')}
+                                    onClick={() => props.setMode(mode)}>
+                                    <Icon className="icon-container" />
+                                </button>
+                            ))}
+                        </div>
                     </div>
 
                 </div>

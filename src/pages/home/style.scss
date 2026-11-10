@@ -307,3 +307,155 @@ html{
         }
     }
 }
+
+// ---- Vibrant (neon / cyberpunk) theme ----
+
+.vibrant-mode-container{
+    background-color: $v-bg;
+    color: $v-text;
+
+    .scroll-progress-bar{
+        background: $v-gradient;
+        height: 3px;
+        box-shadow: 0 0 14px rgba(255,46,147,0.85);
+    }
+
+    .component-back{
+        background: $v-gradient-bg;
+        color: $v-text;
+    }
+    h5{
+        color: $v-muted;
+    }
+    .main-heading-container{
+        .text{
+            background: $v-gradient;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 18px rgba(255,46,147,0.35));
+
+            &:after{
+                background: $v-gradient;
+                height: 3px;
+                box-shadow: 0 0 12px rgba(6,214,208,0.8);
+            }
+            &:hover{
+                filter: drop-shadow(0 0 22px rgba(6,214,208,0.55));
+            }
+        }
+    }
+
+    .landing-component-main{
+        background: $v-gradient-bg;
+        color: $v-text;
+        position: relative;
+        overflow: hidden;
+
+        // animated neon aurora behind the hero
+        &:before{
+            content: '';
+            position: absolute;
+            inset: -30% -10%;
+            z-index: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(38% 42% at 18% 22%, rgba(255,46,147,0.30) 0%, rgba(255,46,147,0) 70%),
+                radial-gradient(34% 38% at 82% 18%, rgba(6,214,208,0.26) 0%, rgba(6,214,208,0) 70%),
+                radial-gradient(42% 46% at 62% 88%, rgba(139,92,246,0.32) 0%, rgba(139,92,246,0) 72%);
+            animation: vibrant-aurora 16s ease-in-out infinite alternate;
+        }
+        .app-content-container{
+            position: relative;
+            z-index: 1;
+        }
+
+        .left-side-container{
+            .intro-label-container{
+                color: $v-cyan;
+                letter-spacing: 1px;
+                text-shadow: 0 0 14px rgba(6,214,208,0.6);
+            }
+            h1{
+                background: $v-gradient;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 26px rgba(255,46,147,0.4));
+
+                span{
+                    -webkit-text-fill-color: transparent;
+                    &:hover{
+                        -webkit-text-fill-color: transparent;
+                        filter: brightness(1.35);
+                    }
+                }
+            }
+            h3{
+                color: $v-yellow;
+                text-shadow: 0 0 20px rgba(255,210,63,0.45);
+            }
+        }
+
+        .right-side-container{
+            .developer-image-container{
+                border-left: 1px solid $v-pink;
+                border-right: 5px solid $v-cyan;
+                border-bottom: 5px solid $v-violet;
+                box-shadow: 0 0 40px rgba(255,46,147,0.35), 0 0 70px rgba(6,214,208,0.22);
+                filter: saturate(1.22) contrast(1.04);
+
+                .button-container-main{
+                    border-color: $v-pink;
+                    box-shadow: 0 0 22px rgba(255,46,147,0.7);
+
+                    .inner-button{
+                        background: $v-gradient;
+                    }
+                }
+                &:hover{
+                    border-left: 1px solid rgba(0,0,0,0);
+                    border-right: 5px solid rgba(0,0,0,0);
+                    border-bottom: 5px solid rgba(0,0,0,0);
+                    box-shadow: 0 0 60px rgba(255,46,147,0.55), 0 0 100px rgba(6,214,208,0.30);
+                    filter: saturate(1.35) contrast(1.06);
+                }
+            }
+        }
+    }
+
+    .footer-container-main{
+        background: $v-bg;
+        color: $v-pink;
+        border-top: 1px solid rgba(255,46,147,0.2);
+    }
+
+    @media only screen and (max-width: 1200px){
+        .landing-component-main{
+            .right-side-container{
+                .developer-image-container:hover{
+                    border-left: 1px solid $v-pink;
+                    border-right: 5px solid $v-cyan;
+                    border-bottom: 5px solid $v-violet;
+                }
+            }
+        }
+    }
+
+    @media (prefers-reduced-motion: no-preference){
+        .landing-component-main:before{
+            animation: vibrant-aurora 16s ease-in-out infinite alternate;
+        }
+    }
+    @media (prefers-reduced-motion: reduce){
+        .landing-component-main:before{
+            animation: none;
+        }
+    }
+}
+
+@keyframes vibrant-aurora{
+    0%   { transform: translate3d(-4%, -2%, 0) scale(1); }
+    50%  { transform: translate3d(3%, 4%, 0) scale(1.08); }
+    100% { transform: translate3d(5%, -3%, 0) scale(1.03); }
+}

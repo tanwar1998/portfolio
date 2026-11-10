@@ -84,3 +84,26 @@
         }
     }
 }
+
+.vibrant-mode-container{
+    .categories-content-main{
+        .categories-background-container{
+            box-shadow: 0 0 50px rgba(255,46,147,0.30), 0 0 90px rgba(6,214,208,0.18);
+            border: 1px solid rgba(255,46,147,0.25);
+
+            .categories-list-container{
+                background: linear-gradient(45deg, rgba(14,4,32,0.92), rgba(26,8,50,0.94));
+                span{
+                    color: $v-muted;
+                }
+                .main{
+                    background: $v-gradient;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    filter: drop-shadow(0 0 12px rgba(6,214,208,0.4));
+                }
+            }
+        }
+    }
+}
